@@ -1,0 +1,64 @@
+@import "rounded";
+
+/* style.scss */
+
+$mainColor: green;
+
+footer { @include rounded(top); }
+
+nav {
+  $navbar-width: 800px;
+  $items: 5;
+  $navbar-color: #ce4dd6;
+
+  width: $navbar-width;
+  border-bottom: 2px solid $navbar-color;
+
+  ul { list-style:none; }
+
+  li {
+    float: left;
+    width: $navbar-width/$items - 10px;
+    @include rounded(top, 32px);
+
+    background-color:
+      lighten($navbar-color, 20%);
+    &:hover {
+      background-color:
+        lighten($navbar-color, 10%);
+    }
+  }
+}
+
+p {color: hsl(0, 100%, 50%);}
+
+.fakeshadow {
+  border: {
+    style: solid;
+    left: {
+      width: 4px;
+      color: #888;
+    }
+    right: {
+      width: 2px;
+      color: #ccc;
+    }
+  }
+}
+
+a {
+	color:$mainColor;
+	&:hover { color:red; }
+	&:visited { color:$mainColor; }
+}
+
+.figure {
+  float: left;
+  margin: 0 ((306 / 960) * 100%) 1.5em 0;  /* 3.317535545023696682% */
+  width: 31.121642969984202211%;             /* 197px / 633px */
+}
+
+li#f-mycroft,
+li#f-winter {
+  margin-right: 0;
+}

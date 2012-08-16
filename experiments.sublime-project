@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "compass"
+		},
+		{
+			"path": "sass"
+		},
+		{
+			"path": "backbone-jqm"
+		},
+		{
+			"path": "haml"
+		},
+		{
+			"path": "requirejs"
+		}
+	]
+}

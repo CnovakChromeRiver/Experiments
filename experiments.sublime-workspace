@@ -1,0 +1,356 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pos",
+				"postData"
+			],
+			[
+				"add",
+				"addListener"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"po",
+				"postDataChunk"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "backbone-jqm/index.html",
+			"settings":
+			{
+				"buffer_size": 2611,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 418.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/ahenderson/Dropbox/At-Home/Work/compass/stylesheets/screen.css",
+		"/C/Users/ahenderson/Dropbox/At-Home/Work/compass/sass/screen.scss",
+		"/C/Users/ahenderson/Dropbox/At-Home/Work/compass/index.html",
+		"/Users/andrew/Dropbox/ChromeRiver/scss/_rounded.scss",
+		"/Users/andrew/Dropbox/LAMPS+/_tests/BackboneJS/index.html",
+		"/Users/andrew/Dropbox/LAMPS+/_tests/BackboneJS/js/app.js",
+		"/Users/andrew/Dropbox/ChromeRiver/code/scss/index.html",
+		"/Users/andrew/Dropbox/ChromeRiver/code/scss/style.scss",
+		"/Users/andrew/Dropbox/ChromeRiver/code/scss/_rounded.scss",
+		"/Users/andrew/Dropbox/ChromeRiver/code/scss/style.css",
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option1/public/js/mylibs/underscore.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/jquery.datasort.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/index.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/js/app.js",
+		"/Applications/MAMP/htdocs/vroozi/app.js",
+		"/Applications/MAMP/htdocs/vroozi/index.html",
+		"/Applications/MAMP/htdocs/vroozi/js/students.js",
+		"/Applications/MAMP/htdocs/vroozi/process_form.php",
+		"/Applications/MAMP/htdocs/vroozi/test.js",
+		"/Applications/MAMP/htdocs/vroozi/test.html",
+		"/Applications/MAMP/htdocs/vroozi/js/main.js",
+		"/Applications/MAMP/htdocs/vroozi/form.html",
+		"/Applications/MAMP/htdocs/vroozi/students.php",
+		"/Applications/MAMP/htdocs/vroozi/form.php",
+		"/Applications/MAMP/htdocs/vroozi/test.php",
+		"/Applications/MAMP/htdocs/vroozi/students.html",
+		"/Users/andrew/node_dev/express_dev/myapp.js",
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option1/public/js/script.js",
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option1/app.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/js/test.js",
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option2/public/js/script.js",
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option2/app.js",
+		"/Users/andrew/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/andrew/node_dev/express_dev/app.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/test.html",
+		"/Users/andrew/Desktop/note",
+		"/Applications/MAMP/htdocs/ajax/jquery.html",
+		"/Applications/MAMP/htdocs/ajax/load.html",
+		"/Users/andrew/Desktop/cc.html",
+		"/Applications/MAMP/htdocs/ajax/ajax.php",
+		"/Applications/MAMP/htdocs/ajax/index.php",
+		"/Applications/MAMP/htdocs/ajax/example/index.html",
+		"/Applications/MAMP/htdocs/ajax/example/ajax.php",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/js/todos.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/todos.html",
+		"/Users/andrew/Downloads/demo 3/js/app.js",
+		"/Users/andrew/Sites/mightclub/friends.html",
+		"/Users/andrew/Sites/mightclub/js/script.js",
+		"/Users/andrew/Sites/mightclub/js/plugins.js",
+		"/Users/andrew/Sites/mightclub/css/bootstrap.css",
+		"/Users/andrew/Sites/mightclub/css/style.css",
+		"/Users/andrew/Sites/mightclub/search.html",
+		"/Users/andrew/Sites/mightclub/humans.txt",
+		"/Users/andrew/Sites/mightclub/goals.html",
+		"/Users/andrew/Sites/mightclub/cassidy.html",
+		"/Users/andrew/Sites/mightclub/sitemap.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/todo.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/app.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/index.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/jquery.datasort2.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/style.css",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/index.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/style.css",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/jquery.tooltip.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/tooltip.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/:* style *:",
+		"/Users/andrew/Downloads/__jquery.tablesorter/jquery.tablesorter.js",
+		"/Users/andrew/Sites/mightclub/home.html",
+		"/Users/andrew/Sites/mightclub/index.html",
+		"/Users/andrew/Sites/mightclub/profile.html",
+		"/Users/andrew/Sites/mightclub/css/bootstrap-responsive.css",
+		"/Users/andrew/Sites/mightclub/index2.html",
+		"/Users/andrew/node_dev/express_dev/views/fun.ejs",
+		"/Users/andrew/node_dev/express_dev/views/users.jade",
+		"/Users/andrew/node_dev/express_dev/routes/index.js",
+		"/Users/andrew/node_dev/express_dev/views/layout.jade",
+		"/Users/andrew/node_dev/express_dev/views/contact.jade",
+		"/Users/andrew/node_dev/express_dev/views/profile.jade",
+		"/Users/andrew/node_dev/express_dev/routes/contact.js",
+		"/Users/andrew/myapp/myapp.js",
+		"/Users/andrew/myapp/myapp.html",
+		"/Users/andrew/myapp/.meteor/local/build/app/myapp.js",
+		"/Users/andrew/myapp/.meteor/local/build/static/myapp.js",
+		"/Users/andrew/node_dev/todo_app/public/css/style.css",
+		"/Users/andrew/node_dev/todo_app/config/router.js",
+		"/Users/andrew/node_dev/todo_app/app/views/todos/show.html.ejs",
+		"/Users/andrew/node_dev/todo_app/app/views/todos/index.html.ejs",
+		"/Users/andrew/node_dev/todo_app/app/views/todos/add.html.ejs",
+		"/Users/andrew/node_dev/todo_app/app/controllers/todos.js",
+		"/Users/andrew/node_dev/todo_app/lib/model_adapters/todo.js",
+		"/Users/andrew/node_dev/todo_app/config/init.js",
+		"/Users/andrew/node_dev/todo_app/app/models/todo.js",
+		"/Users/andrew/node_dev/todo_app_failed/app/models/todo.js",
+		"/Users/andrew/node_dev/custom/server.js",
+		"/Users/andrew/node_tests/todo_app/config/init.js",
+		"/Users/andrew/node_tests/todo_app/app/models/todo.js",
+		"/Users/andrew/node_tests/todo_app/app/controllers/todos.js",
+		"/Users/andrew/node_tests/todo_app/app/views/todos/add.html.ejs",
+		"/Users/andrew/node_tests/todo_app/app/views/todos/_form.html.ejs",
+		"/Users/andrew/node_tests/todo_app/app/views/todos/index.html.ejs",
+		"/Users/andrew/node_tests/todo_app/lib/model_adapters/todo.js",
+		"/Users/andrew/node_tests/todo_app/lib/model_adapters/todos.js",
+		"/Users/andrew/node_tests/requestHandlers.js",
+		"/Users/andrew/node_tests/router.js",
+		"/Users/andrew/node_tests/server.js",
+		"/Users/andrew/node_tests/index.js",
+		"/Users/andrew/node_tests/todo_app/lib/model_adapters",
+		"/Users/andrew/node_tests/example.js",
+		"/Users/andrew/node_tests/listener.js",
+		"/Users/andrew/node_tests/panda.css",
+		"/Users/andrew/node_tests/helloworld.js",
+		"/Users/andrew/myapp/myapp.css",
+		"/Users/andrew/Downloads/demo/js/app.js",
+		"/Users/andrew/Downloads/demo/index.html",
+		"/Applications/MAMP/htdocs/boheme/wp-content/themes/roots/css/style.css",
+		"/Applications/MAMP/htdocs/boheme/wp-content/themes/roots/js/script.js",
+		"/Users/andrew/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".View",
+			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc\"",
+			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;",
+			"style=\"border: 1px solid #ccc;",
+			".navbar-fixed-top",
+			"body",
+			"footer",
+			"footer {",
+			" {",
+			"export",
+			"cancel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding:8px\"",
+			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding:8px",
+			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "backbone-jqm/index.html",
+					"settings":
+					{
+						"buffer_size": 2611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"undersscore",
+				"express_dev/backbone_fundamentals/practicals/stacks/option1/public/js/mylibs/underscore.js"
+			],
+			[
+				"",
+				"datasort/jquery.datasort.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true
+}
