@@ -30,6 +30,32 @@
 				"buffer_size": 2611,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "backbone-jqm-require/js/vendor/require/require.js",
+			"settings":
+			{
+				"buffer_size": 14837,
+				"line_ending": "Windows",
+				"name": "/*"
+			}
+		},
+		{
+			"file": "backbone-jqm-require/js/vendor/require/text.js",
+			"settings":
+			{
+				"buffer_size": 12566,
+				"line_ending": "Windows",
+				"name": "/**"
+			}
+		},
+		{
+			"file": "requirejs/js/main.js",
+			"settings":
+			{
+				"buffer_size": 152,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -88,6 +114,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/jqm/jquery-1.8.0.min.js",
 		"/C/Users/ahenderson/Dropbox/At-Home/Work/compass/stylesheets/screen.css",
 		"/C/Users/ahenderson/Dropbox/At-Home/Work/compass/sass/screen.scss",
 		"/C/Users/ahenderson/Dropbox/At-Home/Work/compass/index.html",
@@ -253,7 +280,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -268,8 +295,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								324,
+								324
 							]
 						],
 						"settings":
@@ -277,6 +304,88 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "backbone-jqm-require/js/vendor/require/require.js",
+					"settings":
+					{
+						"buffer_size": 14837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14837,
+								14837
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/*",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 593.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "backbone-jqm-require/js/vendor/require/text.js",
+					"settings":
+					{
+						"buffer_size": 12566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11219,
+								11219
+							]
+						],
+						"settings":
+						{
+							"auto_name": "/**",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6159.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "requirejs/js/main.js",
+					"settings":
+					{
+						"buffer_size": 152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								147,
+								147
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
