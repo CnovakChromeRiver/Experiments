@@ -9,5 +9,4 @@ require([
 	'bookshelf'
 	], function($, bookshelf){
 			bookshelf.listBook();
-			$(function() { console.log('yo'); });
 	});
