@@ -12,8 +12,8 @@ require.config({
 	}
 });
 
-define(['app', 'jqm-config'], function(app){
-	$(function(){
+define(['app', 'jqm-config'], function (app) {
+	$(function () {
 		console.log("DOM IS READY");
 	});
 	app.initialize();

@@ -32,18 +32,10 @@
 			}
 		},
 		{
-			"file": "backbone-jqm-require/js/main.js",
+			"file": "/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 462,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "backbone-jqm-require/js/vendor/jqm/jqm-config.js",
-			"settings":
-			{
-				"buffer_size": 412,
+				"buffer_size": 25,
 				"line_ending": "Windows"
 			}
 		}
@@ -55,11 +47,31 @@
 		"selected_items":
 		[
 			[
-				"pac",
+				"pack",
 				"Package Control: Install Package"
 			],
 			[
-				"pack",
+				"sublin",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"jsl",
+				"JSLint: Run JSLint"
+			],
+			[
+				"jslint",
+				"JSLint: Run JSLint"
+			],
+			[
+				"jslin",
+				"JSLint: Run JSLint"
+			],
+			[
+				"j",
+				"JSLint: Run JSLint"
+			],
+			[
+				"pac",
 				"Package Control: Install Package"
 			],
 			[
@@ -108,6 +120,12 @@
 	},
 	"file_history":
 	[
+		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/main.js",
+		"/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
+		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/jqm/jqm-config.js",
+		"/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
 		"/C/Users/ahenderson/Downloads/phonegap-phonegap-2dbbdab/lib/webos/js/cordova-core.js",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/jqm/jquery_1.8_min.js",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/jqm/jquery.mobile-1.1.1.js",
@@ -229,13 +247,7 @@
 		"/Users/andrew/node_tests/example.js",
 		"/Users/andrew/node_tests/listener.js",
 		"/Users/andrew/node_tests/panda.css",
-		"/Users/andrew/node_tests/helloworld.js",
-		"/Users/andrew/myapp/myapp.css",
-		"/Users/andrew/Downloads/demo/js/app.js",
-		"/Users/andrew/Downloads/demo/index.html",
-		"/Applications/MAMP/htdocs/boheme/wp-content/themes/roots/css/style.css",
-		"/Applications/MAMP/htdocs/boheme/wp-content/themes/roots/js/script.js",
-		"/Users/andrew/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings"
+		"/Users/andrew/node_tests/helloworld.js"
 	],
 	"find":
 	{
@@ -284,7 +296,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -299,12 +311,100 @@
 						"selection":
 						[
 							[
-								480,
-								480
+								464,
+								464
 							]
 						],
 						"settings":
 						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"indent": 1,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -315,49 +415,111 @@
 				},
 				{
 					"buffer": 1,
-					"file": "backbone-jqm-require/js/main.js",
+					"file": "/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 462,
+						"buffer_size": 25,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								391,
-								391
+								1,
+								1
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "backbone-jqm-require/js/vendor/jqm/jqm-config.js",
-					"settings":
-					{
-						"buffer_size": 412,
-						"regions":
-						{
-						},
-						"selection":
-						[
+							"annotations":
 							[
-								90,
-								90
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"indent": 1,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "fill",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -399,6 +561,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.jslint_result_view":
+	{
+		"height": 234.0
+	},
 	"replace":
 	{
 		"height": 64.0

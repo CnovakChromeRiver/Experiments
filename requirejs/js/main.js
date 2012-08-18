@@ -4,9 +4,6 @@ require.config({
 	}
 });
 
-require([
-	'jquery',
-	'bookshelf'
-	], function($, bookshelf){
-			bookshelf.listBook();
-	});
+require(['jquery', 'bookshelf'], function($, bookshelf){
+	bookshelf.listBook();
+});
