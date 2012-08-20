@@ -3,7 +3,7 @@ define(['jquery', 'underscore', 'backbone', 'text!modules/home/homeViewTemplate.
 		var HomeView = Backbone.View.extend({
 
 			//init template
-			template: _.tempate(homeViewTemplate),
+			template: _.template(homeViewTemplate),
 
 			//render the content into div of view
 			render: function () {

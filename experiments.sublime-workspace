@@ -27,16 +27,24 @@
 			"file": "backbone-jqm-require/index.html",
 			"settings":
 			{
-				"buffer_size": 480,
+				"buffer_size": 457,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
+			"file": "backbone-jqm-require/js/app.js",
 			"settings":
 			{
-				"buffer_size": 25,
-				"line_ending": "Windows"
+				"buffer_size": 259,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "backbone-jqm-require/js/router.js",
+			"settings":
+			{
+				"buffer_size": 1395,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -120,6 +128,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/modules/home/homeViewTemplate.html",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/main.js",
 		"/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/jqm/jqm-config.js",
@@ -245,9 +255,7 @@
 		"/Users/andrew/node_tests/index.js",
 		"/Users/andrew/node_tests/todo_app/lib/model_adapters",
 		"/Users/andrew/node_tests/example.js",
-		"/Users/andrew/node_tests/listener.js",
-		"/Users/andrew/node_tests/panda.css",
-		"/Users/andrew/node_tests/helloworld.js"
+		"/Users/andrew/node_tests/listener.js"
 	],
 	"find":
 	{
@@ -304,15 +312,15 @@
 					"file": "backbone-jqm-require/index.html",
 					"settings":
 					{
-						"buffer_size": 480,
+						"buffer_size": 457,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								464,
-								464
+								442,
+								442
 							]
 						],
 						"settings":
@@ -359,7 +367,7 @@
 							},
 							"gjslint_ignore":
 							[
-								110
+								110.0
 							],
 							"gjslint_options":
 							[
@@ -369,7 +377,7 @@
 							{
 								"browser": true,
 								"evil": true,
-								"indent": 1,
+								"indent": 1.0,
 								"regexdash": true,
 								"sub": true,
 								"trailing": true,
@@ -386,7 +394,7 @@
 							],
 							"pyflakes_ignore_import_*": true,
 							"sublimelinter": true,
-							"sublimelinter_delay": 0,
+							"sublimelinter_delay": 0.0,
 							"sublimelinter_disable":
 							[
 							],
@@ -415,18 +423,44 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
+					"file": "backbone-jqm-require/js/app.js",
 					"settings":
 					{
-						"buffer_size": 25,
+						"buffer_size": 259,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "backbone-jqm-require/js/router.js",
+					"settings":
+					{
+						"buffer_size": 1395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1352,
+								1352
 							]
 						],
 						"settings":
@@ -473,7 +507,7 @@
 							},
 							"gjslint_ignore":
 							[
-								110
+								110.0
 							],
 							"gjslint_options":
 							[
@@ -483,7 +517,7 @@
 							{
 								"browser": true,
 								"evil": true,
-								"indent": 1,
+								"indent": 1.0,
 								"regexdash": true,
 								"sub": true,
 								"trailing": true,
@@ -500,7 +534,7 @@
 							],
 							"pyflakes_ignore_import_*": true,
 							"sublimelinter": true,
-							"sublimelinter_delay": 0,
+							"sublimelinter_delay": 0.0,
 							"sublimelinter_disable":
 							[
 							],
@@ -508,8 +542,8 @@
 							{
 							},
 							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_mark_style": "fill",
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
 							"sublimelinter_notes": false,
 							"sublimelinter_objj_check_ascii": false,
 							"sublimelinter_popup_errors_on_save": false,
@@ -519,10 +553,11 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 296.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -563,7 +598,7 @@
 	"menu_visible": true,
 	"output.jslint_result_view":
 	{
-		"height": 234.0
+		"height": 27.0
 	},
 	"replace":
 	{
