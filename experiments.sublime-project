@@ -18,6 +18,15 @@
 		},
 		{
 			"path": "backbone-jqm-require"
+		},
+		{
+			"path": "backbone-jqm-require/books"
+		},
+		{
+			"path": "jqm"
+		},
+		{
+			"path": "/C/xampp/htdocs/test/books"
 		}
 	]
 }
