@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="jquery.mobile-1.1.1.css">
 	<script type="text/javascript" src="jquery-1.8.0.js"></script>
 	<script type="text/javascript" src="jquery.mobile-1.1.1.js"></script>
@@ -11,20 +11,21 @@
 <body>
 	<div data-role="page">
 		<div data-role="header">
-			<h1>My Title</h1>
+			<h1>Home</h1>
 		</div>
 		<div data-role="content">
 			<p>Hello world!</p>
-			<ul data-role="listview" data-inset="true" data-filter="true">
-				<li><a href="test.html" data-transition="pop">Acura</a></li>
-				<li><a href="#">Audi</a></li>
-				<li><a href="#">BMW</a></li>
-				<li><a href="#">Cadillac</a></li>
-				<li><a href="#">Ferrari</a></li>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="bmw.html" data-transition="pop">BMW</a></li>
+				<li><a href="acura.html" data-transition="pop">Acura</a></li>
 			</ul>
 		</div>
+		<div class="gesture"><strong>Tracking: </strong> <div class="measure">N/A</div></div>
+		<div><strong>Behavior: </strong><div class="behavior">N/A</div></div>
+		<div><strong>jQuery DOM Reading:</strong> <div class="jquery-reading">N/A</div>
 	</div>
+	<!-- <script type="text/javascript" src="jquery.cookie.js"></script> -->
 	<script type="text/javascript" src="jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="scripts.js"></script>
+	<script type="text/javascript" src="scripts2.js"></script>
 </body>
 </html>

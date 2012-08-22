@@ -1,35 +1,17 @@
 $(function () {
-	$('a').mousewheel(function(event, delta, deltaX, deltaY) {
-		function log(e) {
-			console.log(e);
+	$(document).on("mousewheel", "a", function(event, delta) {
+		if (delta > 0) {
+			$.cookie("source", window.location.href);
+			var href = $(this).attr("href");
+			console.log(href)
+			$.mobile.changePage(href, { transition: "pop" });
 		}
-		var o = '';
-		if (delta > 0)
-			o = '#test1: up ('+delta+')',
-			$(this).click();
-		else if (delta < 0)
-			o = '#test1: down ('+delta+')';
-		
-		if (deltaX > 0)
-			o = o + ', east ('+deltaX+')';
-		else if (deltaX < 0)
-			o = o + ', west ('+deltaX+')';
-		
-		if (deltaY > 0)
-			o = o + ', north ('+deltaY+')';
-		else if (deltaY < 0)
-			o = o + ', south ('+deltaY+')';
-		
-		if( o != '' )
-			log( o );
-		
-		log('pageX: ' + event.pageX + ' pageY: ' + event.pageY );
-
 		return false;
 	});
-
-	$('a').click(function(){
-		//$(this).css('background', 'red');
+	$(document).mousewheel(function(event, delta){
+		if (delta < 0) {
+			var source = $.cookie("source");
+			$.mobile.changePage(source, { transition: "pop", reloadPage:true });
+		}
 	});
-
 });
