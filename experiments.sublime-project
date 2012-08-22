@@ -21,6 +21,9 @@
 		},
 		{
 			"path": "jqm"
+		},
+		{
+			"path": "/C/xampp/htdocs/zui"
 		}
 	]
 }
