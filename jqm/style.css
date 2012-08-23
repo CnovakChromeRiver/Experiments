@@ -1,0 +1,11 @@
+.consoleWrap {
+	padding:10px 10px 15px;
+	border-top:2px solid #999;
+	background:#303030;
+	color:#ccc;
+	font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
+	text-shadow:none;
+}
+img {
+	max-width:96%;
+}

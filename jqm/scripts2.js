@@ -39,13 +39,18 @@ $(function () {
 		}
 	});
 
-	document.addEventListener('gesturechange', function (event) {
+	document.addEventListener('gesturechange', gestureChange, false);
 
-	    event.preventDefault();
+	document.addEventListener('gestureend', gestureEnd, false);
+
+	function gestureChange (event) {
+
+		event.preventDefault();
 
 	    var scale = event.scale;
 
-	    //$(".measure").text(event.scale);
+	    $(".measure").text(scale);
+	    $(".input-scale").val(scale);
 
 	    if(scale > 1) {
 	    	$(".behavior").text("Zooming In");
@@ -53,38 +58,26 @@ $(function () {
 	    	$(".behavior").text("Zooming Out");
 	    }
 
-	    gestureEnd(scale);
+	};
 
-	}, false);
+	function gestureEnd (event) {
 
-	function gestureEnd(s) {
+		event.preventDefault();
 
-		var scale = s;
-		
-		$("body").on('gestureend', "a", function (event, scale) {
+		var parent = $(".page").attr("data-parent"),
+			href = $(this).attr("href"),
+			scale = ($(".input-scale").val()) * 1;
 
-			$(".measure").text(scale);
+		$(".console").append("parent: " + parent + ", href: " + href + ", scale: " + scale + " ");
 
-			//$(".jquery-reading").text("Positive");
+		if(scale < 1 && parent !== undefined) {
+	    	$(".behavior").text("Navigating to the parent...");
+	    	$(".target").text(event.target);
+	    } else if (scale > 1 && href !== undefined) {
+	    	$(".behavior").text("Drilling Down...");
+	    	$(".target").text(event.target);
+	    }
 
-
-			var parent = $(".page").attr("data-parent");
-			
-
-			if(scale > 1 && event.target !== undefined) {
-		    	$(".behavior").text("Drilling Down...");
-		    } else if (scale < 1 && parent !== undefined) {
-		    	$(".behavior").text("Navigating to the parent...");
-		    } else {
-		    	// do nothing
-		    }
-			//$.mobile.changePage($(this).attr("href"), { transition: "pop" });
-			/* event.preventDefault();
-			$(this).css("background", "red");
-			if(event.scale > 1) {
-		    	$(".jquery-reading").text("Navigating");
-		    }*/
-		});
-	}
+	};
 
 });
