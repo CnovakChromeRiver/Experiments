@@ -1199,6 +1199,70 @@ div.ui-mobile-viewport { overflow-x: hidden; }
     from { opacity: 1; }
     to { opacity: 0; }
 }
+.andrew {
+	-webkit-transform-origin: 50% 50%;
+}
+.andrew.in {
+	-webkit-transform: scale(1);
+    opacity: 1;
+	-webkit-animation-name: andrewin;
+	-webkit-animation-duration: 500ms;
+}
+.andrew.out {
+	-webkit-animation-name: andrewout;
+	opacity: 0;
+	-webkit-animation-duration: 1000ms;
+}
+.andrew.in.reverse {
+	-webkit-transform: scale(5);
+	-webkit-animation-name: andrewRevIn;
+	-webkit-animation-duration: 800ms;
+}
+.andrew.out.reverse {
+	-webkit-transform: scale(.5);
+	-webkit-animation-name: andrewRevOut;
+	-webkit-animation-duration: 500ms;
+}
+@-webkit-keyframes andrewin {
+    from {
+        -webkit-transform: scale(.5);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes andrewout {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes andrewRevIn {
+    from {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes andrewRevOut {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(.5);
+        opacity: 0;
+    }
+}
 .fade.out {
 	opacity: 0;
 	-webkit-animation-duration: 125ms;

@@ -53,9 +53,9 @@ $(function () {
 	    $(".input-scale").val(scale);
 
 	    if(scale > 1) {
-	    	$(".behavior").text("Zooming In");
+	    	$(".gesture").text("Zooming In");
 	    } else {
-	    	$(".behavior").text("Zooming Out");
+	    	$(".gesture").text("Zooming Out");
 	    }
 
 	};
@@ -71,10 +71,10 @@ $(function () {
 		$(".console").append("parent: " + parent + ", href: " + href + ", scale: " + scale + " ");
 
 		if(scale < 1 && parent !== undefined) {
-	    	$(".behavior").text("Navigating to the parent...");
+	    	$(".gesture").text("Navigating to the parent...");
 	    	$(".target").text(event.target);
 	    } else if (scale > 1 && href !== undefined) {
-	    	$(".behavior").text("Drilling Down...");
+	    	$(".gesture").text("Drilling Down...");
 	    	$(".target").text(event.target);
 	    }
 

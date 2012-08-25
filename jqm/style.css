@@ -1,11 +1,26 @@
-.consoleWrap {
-	padding:10px 10px 15px;
-	border-top:2px solid #999;
-	background:#303030;
-	color:#ccc;
-	font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
-	text-shadow:none;
-}
+.console {
+  padding: 10px 10px 15px;
+  border-top-size: 2px;
+  border-top-style: solid;
+  border-top-color: #999999;
+  background: #303030;
+  color: #ccc;
+  font-family: Consolas, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+  text-shadow: none; }
+
 img {
-	max-width:96%;
-}
+  max-width: 100%; }
+
+a:hover {
+  text-decoration: none !important; }
+
+.ui-block-a {
+  border-right: 1px solid #cccccc; }
+
+.table th, .table td {
+  line-height: 38px; }
+
+@media (min-width: 480px) {
+  img {
+    float: left;
+    margin-right: 20px; } }

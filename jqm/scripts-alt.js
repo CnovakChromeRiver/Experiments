@@ -17,12 +17,12 @@ function mouseWheelIn () {
 
 	var timeStamp = new Date().getTime();
 	
-	$(document).on("mousewheel", "a", function (event, delta, deltaX, deltaY) {
+	$(document).on("mousewheel", "[data-link='true']", function (event, delta, deltaX, deltaY) {
 
 		event.preventDefault();
 		
 		var timeNow = new Date().getTime(),
-			target = $(this).attr("href");
+			target = $(this).attr("data-target");
 
 		if(timeNow - timeStamp < 100) {
 			//console.log(timeNow - timeStamp + " = Too soon.");
