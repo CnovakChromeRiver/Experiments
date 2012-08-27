@@ -1,17 +1,12 @@
 $(function() {
 
-	myScroll = new iScroll( "wrapper", { vScrollbar: true } );
-	
 	mouseWheelIn();
 	mouseWheelOut();
 	pinchOpen();
 	pinchClose();
-	drag();
 
 	$(document).on("pagechange", function () {
 		pinchOpen();
-		drag();
-		myScroll = new iScroll( "wrapper2", { vScrollbar: true } );
 	});
 
 	//$("a").unbind("mousewheel");
@@ -22,12 +17,12 @@ function mouseWheelIn () {
 
 	var timeStamp = new Date().getTime();
 	
-	$(document).on("mousewheel", "[data-link='true']", function (event, delta, deltaX, deltaY) {
+	$(document).on("mousewheel", "a", function (event, delta, deltaX, deltaY) {
 
 		event.preventDefault();
 		
 		var timeNow = new Date().getTime(),
-			target  = $(this).attr("data-target");
+			target = $(this).attr("href");
 
 		if(timeNow - timeStamp < 100) {
 			//console.log(timeNow - timeStamp + " = Too soon.");
@@ -55,7 +50,7 @@ function mouseWheelOut () {
 		event.preventDefault();
 
 		var timeNow = new Date().getTime(),
-			target  = $(".page").attr("data-parent");
+			target = $(".page").attr("data-parent");
 
 		if(timeNow - timeStamp < 100) {
 			//console.log(timeNow - timeStamp + " = Too soon.");
@@ -82,7 +77,7 @@ function pinchOpen () {
 		//$(".action").append("Pinch Open ");
 
 		var timeNow = new Date().getTime(),
-			target  = $(this).attr("href");
+			target = $(this).attr("href");
 
 		if(timeNow - timeStamp < 100) {
 			//$(".action").append(timeNow - timeStamp + " = Too soon. ");
@@ -115,7 +110,7 @@ function pinchClose () {
 		//$(".action").append("Pinch Close ");
 
 		var timeNow = new Date().getTime(),
-			target  = $(".page").attr("data-parent");
+			target = $(".page").attr("data-parent");
 
 		if(timeNow - timeStamp < 100) {
 			timeStamp = timeNow;
@@ -138,49 +133,3 @@ function pinchClose () {
 	});
 
 };
-
-function drag() {
-
-	$(".ui-page-active .ui-content").on("mousedown", function(mde) {
-
-		var startX = mde.pageX,
-			startY = mde.pageY,
-			self   = $(this);
-
-		self.css("cursor", "move");
-
-		self.on("mouseup", function(mue) {
-
-			var endX    = mue.pageX,
-				endY    = mue.pageY,
-				offsetX = startX - endX,
-				offsetY = startY - endY;
-
-			self.css("cursor", "default");
-
-			if ( 50 < offsetY) {
-
-				var target  = $(".page").attr("data-next");
-				
-				if ( target !== undefined ) {
-
-					$.mobile.changePage(target, { transition: "slideup" });
-				}
-			} else if ( offsetY < -50 ) {
-
-				var target  = $(".page").attr("data-prev");
-
-				if ( target !== undefined ) {
-
-					$.mobile.changePage(target, { transition: "slidedown" });
-				}
-			}
-
-			self.unbind("mouseup");
-
-			console.log(offsetX + ", " + offsetY);
-
-		});
-		return false;
-	});
-}

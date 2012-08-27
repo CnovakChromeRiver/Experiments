@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"mou",
+				"mouseWheel"
+			],
+			[
+				"pin",
+				"pinchOpen"
+			],
+			[
+				"pinch",
+				"pinchClose"
+			],
+			[
+				"gestu",
+				"gestureEnd"
+			],
+			[
+				"gs",
+				"gestureChange"
+			],
+			[
 				"pos",
 				"postData"
 			],
@@ -24,18 +44,45 @@
 	"buffers":
 	[
 		{
-			"file": "/C/xampp/htdocs/zui/jqm/scripts2.js",
+			"file": "/C/xampp/htdocs/zui/jqm/scripts-alt.js",
 			"settings":
 			{
-				"buffer_size": 1031,
+				"buffer_size": 3497,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/xampp/htdocs/zui/jqm/index.html",
+			"file": "/C/xampp/htdocs/zui/jqm/lib/style.scss",
 			"settings":
 			{
-				"buffer_size": 1184,
+				"buffer_size": 587,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/zui/jqm/style.css",
+			"settings":
+			{
+				"buffer_size": 525,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE HTML>\n<html lang=\"en-US\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title></title>\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">\n	<link rel=\"stylesheet\" href=\"jquery.mobile-1.1.1.css\">\n	<link rel=\"stylesheet\" href=\"bootstrap-2.0.4.css\">\n	<link rel=\"stylesheet\" href=\"jquery.mobile.simultaneous-transitions.css\">\n	<link rel=\"stylesheet\" href=\"style.css\">\n	<script type=\"text/javascript\" src=\"jquery-1.8.0.js\"></script>\n	<script src=\"jquery.mobile.transition-handler-simple.js\"></script>\n    <script src=\"jquery.mobile.simultaneous-transitions-simple.js\"></script>\n	<script type=\"text/javascript\" src=\"jquery.mobile-1.1.1.js\"></script>\n</head>\n<body>\n	<div data-role=\"page\">\n		<div data-role=\"header\">\n			<h1>My Dashboard</h1>\n		</div>\n		<div data-role=\"content\">\n			<div class=\"ui-grid-a\">\n				<div class=\"ui-block-a\">\n					<table class=\"table table-striped\" summary=\"This table lists all the JetBlue flights.\">\n					  <caption>Flights</caption>\n					  <thead>\n					    <tr>\n					       <th scope=\"col\">Flight:</th>  \n					      <th scope=\"col\">From:</th>  \n					      <th scope=\"col\">To:</th>  \n					    </tr>\n					  </thead>\n					  <tfoot>\n					    <tr>\n					      <td colspan=\"5\">Total: 3 flights</td>\n					    </tr>\n					  </tfoot>\n					  <tbody>\n					  <tr data-link=\"true\" data-target=\"delta.html\">\n					    <th scope=\"row\">Delta 983</th>\n					    <td>Los Angeles (LAX)</td>\n					    <td>New York (JFK)</td>\n					  </tr>\n					  <tr data-link=\"true\" data-target=\"american.html\">\n					    <th scope=\"row\">American 354</th>\n					    <td>New York (JFK)</td>\n					    <td>Boston (BOS)</td>\n					  </tr>\n					  <tr data-link=\"true\" data-target=\"jetblue.html\">\n					    <th scope=\"row\">Jet Blue 465</th>\n					    <td>Boston (BOS)</td>\n					    <td>Los Angeles (LAX)</td>\n					  </tr>\n					  </tbody>\n					</table>\n				</div>\n				<div class=\"ui-block-b\">\n					<p>This is a test update. Test Update 99999999999Update numero 3.Please submit all expenses this week for billing cutoff.  Also remember that we have new travel policy rules for airline club memberships for heavy travelers which must be complied with for reimbursements to be approved.Additional help documents and the firm's travel policy guides: Firm Travel Policy Firm Routing Approval Guidelines Firm Customized Help Guide</p>\n\nHelp and Tutorials has moved. Check out the new Chrome River Help Center by clicking the Help button in the application toolbar.\n				</div>\n			</div><!-- /grid-a -->\n		</div>\n		<div class=\"console\">\n			<div><strong>Scale: </strong></div>\n			<div class=\"measure\"></div>\n			<div><strong>Gesture: </strong></div>\n			<div class=\"gesture\"></div>\n			<div><strong>Target: </strong></div>\n			<div class=\"target\"></div>\n			<div><strong>Action: </strong></div>\n			<div class=\"action\"></div>\n		</div>\n	</div>\n	<script type=\"text/javascript\" src=\"jquery.mousewheel.js\"></script>\n	<script type=\"text/javascript\" src=\"jgestures.js\"></script>\n	<script type=\"text/javascript\" src=\"scripts-alt.js\"></script>\n	<!-- <script type=\"text/javascript\" src=\"http://jsconsole.com/remote.js?andrewzui\"></script> -->\n</body>\n</html>",
+			"file": "/C/xampp/htdocs/zui/jqm/dashboard.html",
+			"file_size": 3685,
+			"file_write_time": 129905595872554134,
+			"settings":
+			{
+				"buffer_size": 3153,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/zui/jqm/jetblue.html",
+			"settings":
+			{
+				"buffer_size": 1951,
 				"line_ending": "Windows"
 			}
 		}
@@ -46,6 +93,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
 			[
 				"pack",
 				"Package Control: Install Package"
@@ -69,10 +120,6 @@
 			[
 				"j",
 				"JSLint: Run JSLint"
-			],
-			[
-				"pac",
-				"Package Control: Install Package"
 			],
 			[
 				"",
@@ -120,6 +167,35 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/zui/jqm/flights.html",
+		"/C/xampp/htdocs/zui/jqm/lib/_responsive-1200px-min.scss",
+		"/C/xampp/htdocs/zui/jqm/328i.html",
+		"/C/xampp/htdocs/zui/jqm/index-alt.html",
+		"/C/xampp/htdocs/zui/jqm/index.html",
+		"/C/xampp/htdocs/zui/jqm/scripts.js",
+		"/C/Users/ahenderson/AppData/Local/Temp/fz3temp-1/scripts3.js",
+		"/C/xampp/htdocs/zui/jqm/lib/style.scss",
+		"/C/xampp/htdocs/zui/jqm/jquery.mobile-1.1.1.css",
+		"/C/Users/ahenderson/Downloads/h5bp-mobile-boilerplate-d4a38fe/index.html",
+		"/C/Users/ahenderson/Downloads/jlong-sass-twitter-bootstrap-cd0703b/README.md",
+		"/C/Users/ahenderson/Downloads/h5bp-html5-boilerplate-1ac32b7/index.html",
+		"/C/xampp/htdocs/zui/jqm/style.css",
+		"/C/Users/ahenderson/Downloads/jlong-sass-twitter-bootstrap-cd0703b/docs/build/index.js",
+		"/C/Users/ahenderson/Downloads/jlong-sass-twitter-bootstrap-cd0703b/docs/index.html",
+		"/C/Users/ahenderson/Downloads/jlong-sass-twitter-bootstrap-cd0703b/lib/_responsive-767px-max.scss",
+		"/C/Users/ahenderson/Downloads/jlong-sass-twitter-bootstrap-cd0703b/lib/_pagination.scss",
+		"/C/xampp/htdocs/zui/jqm/scripts3.js",
+		"/C/Users/ahenderson/Downloads/brandonaaron-jquery-mousewheel-a06ef4e/test/index.html",
+		"/C/Users/ahenderson/Downloads/CR-HTML5-standards-20120820.txt",
+		"/C/xampp/htdocs/zui/jqm/jquery.mobile.simultaneous-transitions-simple.js",
+		"/C/xampp/htdocs/zui/jqm/rdx.html",
+		"/C/xampp/htdocs/zui/jqm/acura.html",
+		"/C/xampp/htdocs/zui/jqm/bmw.html",
+		"/C/Users/ahenderson/Downloads/jGestures/jgestures.js",
+		"/C/xampp/htdocs/zui/jqm/scripts2.js",
+		"/C/Users/ahenderson/Documents/GitHub/Experiments/jqm/test.html",
+		"/C/Users/ahenderson/Documents/GitHub/Experiments/jqm/index.html",
+		"/C/Users/ahenderson/Documents/GitHub/Experiments/jqm/scripts2.js",
 		"/C/xampp/apache/conf/httpd.conf",
 		"/C/xampp/htdocs/test/jqm/index.html",
 		"/C/xampp/htdocs/test/jqm/bmw.html",
@@ -129,8 +205,6 @@
 		"/C/xampp/htdocs/test/jqm/scripts2.js",
 		"/C/xampp/htdocs/test/jqm/audi.html",
 		"/C/xampp/htdocs/test/jqm/scripts.js",
-		"/C/Users/ahenderson/Documents/GitHub/Experiments/jqm/test.html",
-		"/C/Users/ahenderson/Documents/GitHub/Experiments/jqm/index.html",
 		"/C/xampp/htdocs/test/books/js/jqm-config.js",
 		"/C/xampp/htdocs/test/books/js/router.js",
 		"/C/xampp/htdocs/test/books/model/book/bookCollection.js",
@@ -220,34 +294,7 @@
 		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/todo.html",
 		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/app.js",
 		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/index.html",
-		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/jquery.datasort2.js",
-		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/style.css",
-		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/index.html",
-		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/style.css",
-		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/jquery.tooltip.js",
-		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/tooltip.html",
-		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/:* style *:",
-		"/Users/andrew/Downloads/__jquery.tablesorter/jquery.tablesorter.js",
-		"/Users/andrew/Sites/mightclub/home.html",
-		"/Users/andrew/Sites/mightclub/index.html",
-		"/Users/andrew/Sites/mightclub/profile.html",
-		"/Users/andrew/Sites/mightclub/css/bootstrap-responsive.css",
-		"/Users/andrew/Sites/mightclub/index2.html",
-		"/Users/andrew/node_dev/express_dev/views/fun.ejs",
-		"/Users/andrew/node_dev/express_dev/views/users.jade",
-		"/Users/andrew/node_dev/express_dev/routes/index.js",
-		"/Users/andrew/node_dev/express_dev/views/layout.jade",
-		"/Users/andrew/node_dev/express_dev/views/contact.jade",
-		"/Users/andrew/node_dev/express_dev/views/profile.jade",
-		"/Users/andrew/node_dev/express_dev/routes/contact.js",
-		"/Users/andrew/myapp/myapp.js",
-		"/Users/andrew/myapp/myapp.html",
-		"/Users/andrew/myapp/.meteor/local/build/app/myapp.js",
-		"/Users/andrew/myapp/.meteor/local/build/static/myapp.js",
-		"/Users/andrew/node_dev/todo_app/public/css/style.css",
-		"/Users/andrew/node_dev/todo_app/config/router.js",
-		"/Users/andrew/node_dev/todo_app/app/views/todos/show.html.ejs",
-		"/Users/andrew/node_dev/todo_app/app/views/todos/index.html.ejs"
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/jquery.datasort2.js"
 	],
 	"find":
 	{
@@ -265,6 +312,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"></",
+			"slide",
+			".result",
+			".behavior",
+			".console",
+			"result",
+			"pinchOpen",
 			"listen",
 			"listening",
 			".View",
@@ -285,6 +339,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			".action",
+			".gesture",
+			".result",
 			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding:8px\"",
 			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding:8px",
 			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;"
@@ -298,23 +355,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/xampp/htdocs/zui/jqm/scripts2.js",
+					"file": "/C/xampp/htdocs/zui/jqm/scripts-alt.js",
 					"settings":
 					{
-						"buffer_size": 1031,
+						"buffer_size": 3497,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								768,
-								768
+								704,
+								704
 							]
 						],
 						"settings":
@@ -411,25 +468,256 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 138.0,
+						"translation.y": 414.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/C/xampp/htdocs/zui/jqm/index.html",
+					"file": "/C/xampp/htdocs/zui/jqm/lib/style.scss",
 					"settings":
 					{
-						"buffer_size": 1184,
+						"buffer_size": 587,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								902,
-								902
+								372,
+								372
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"indent": 1,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "fill",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/zui/jqm/style.css",
+					"settings":
+					{
+						"buffer_size": 525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"indent": 1,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "fill",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/xampp/htdocs/zui/jqm/dashboard.html",
+					"settings":
+					{
+						"buffer_size": 3153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2349,
+								2477
 							]
 						],
 						"settings":
@@ -526,7 +814,122 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 138.0,
+						"translation.y": 1150.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/xampp/htdocs/zui/jqm/jetblue.html",
+					"settings":
+					{
+						"buffer_size": 1951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								943,
+								943
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"indent": 1,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_mark_style": "fill",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -602,6 +1005,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 225.0,
+	"side_bar_width": 344.0,
 	"status_bar_visible": true
 }
