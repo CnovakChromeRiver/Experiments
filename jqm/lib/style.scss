@@ -5,8 +5,9 @@ $main-color: #999;
 $sec-color: #ccc;
 $main-font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
 
-
+h1 {line-height:18px;}
 .console {
+	display:none;
 	padding: $padding;
 	border-top: {
 		size: $size;
@@ -32,6 +33,12 @@ thead tr {background:#ddd;}
 	z-index:1;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
+
+.ui-btn-left, .ui-btn-right, .ui-input-clear, .ui-btn-inline, .ui-grid-a .ui-btn, .ui-grid-b .ui-btn, .ui-grid-c .ui-btn, .ui-grid-d .ui-btn, .ui-grid-e .ui-btn, .ui-grid-solo .ui-btn {
+	margin-right:0;margin-left:0;
+}
+.report.ui-li-static.ui-li {background:white;padding:1em;box-shadow:0 0 6px rgba(0,0,0,0.3);margin:2em 1em;border:1px solid #ccc}
+.report .ui-li-desc {overflow:visible;white-space:normal;margin-bottom:20px;}
 
 @media (min-width:480px) {
 

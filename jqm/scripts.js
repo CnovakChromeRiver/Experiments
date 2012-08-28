@@ -1,17 +1,18 @@
 $(function() {
 
-	myScroll = new iScroll( "wrapper", { vScrollbar: true } );
+	//myScroll = new iScroll( "wrapper", { vScrollbar: true } );
 	
 	mouseWheelIn();
 	mouseWheelOut();
 	pinchOpen();
 	pinchClose();
-	drag();
+	//drag();
 
 	$(document).on("pagechange", function () {
+		
 		pinchOpen();
-		drag();
-		myScroll = new iScroll( "wrapper2", { vScrollbar: true } );
+		//drag();
+		//myScroll = new iScroll( "wrapper2", { vScrollbar: true } );
 	});
 
 	//$("a").unbind("mousewheel");
@@ -30,10 +31,12 @@ function mouseWheelIn () {
 			target  = $(this).attr("data-target");
 
 		if(timeNow - timeStamp < 100) {
+			
 			//console.log(timeNow - timeStamp + " = Too soon.");
 			timeStamp = timeNow;
 			return;
 		} else if (timeNow - timeStamp > 100 && 0 < delta && target !== undefined) {
+			
 			//console.log(timeNow - timeStamp + " = Thanks for waiting.");
 			//alert(delta + ", " + deltaX + ", " + deltaY);
 			$(".gesture").append("Mousewheel In at: " + (timeNow - timeStamp) + " ");
@@ -55,13 +58,15 @@ function mouseWheelOut () {
 		event.preventDefault();
 
 		var timeNow = new Date().getTime(),
-			target  = $(".page").attr("data-parent");
+			target  = $(".ui-page-active").attr("data-parent");
 
 		if(timeNow - timeStamp < 100) {
+			
 			//console.log(timeNow - timeStamp + " = Too soon.");
 			timeStamp = timeNow;
 			return;
 		} else if (timeNow - timeStamp > 100 && delta < 0 && target !== undefined) {
+			
 			//console.log(timeNow - timeStamp + " = Thanks for waiting.");
 			//alert(delta + ", " + deltaX + ", " + deltaY);
 			$(".gesture").append("Mousewheel Out at: " + (timeNow - timeStamp) + " ");
@@ -85,10 +90,12 @@ function pinchOpen () {
 			target  = $(this).attr("href");
 
 		if(timeNow - timeStamp < 100) {
+			
 			//$(".action").append(timeNow - timeStamp + " = Too soon. ");
 			timeStamp = timeNow;
 			return;
 		} else if (timeNow - timeStamp > 100 && target !== undefined) {
+			
 			//$(".action").append(timeNow - timeStamp + " = Thanks for waiting. ");
 			$(".gesture").append("Pinch Open at: " + (timeNow - timeStamp) + " ");
 			timeStamp = timeNow;
@@ -118,14 +125,18 @@ function pinchClose () {
 			target  = $(".page").attr("data-parent");
 
 		if(timeNow - timeStamp < 100) {
+			
 			timeStamp = timeNow;
+			
 			return;
 		} else if (timeNow - timeStamp > 100 && target !== undefined) {
+			
 			$(".gesture").append("Pinch Close at: " + (timeNow - timeStamp) + " ");
 			timeStamp = timeNow;
 			$(".action").append("Backing out... ");
 			$.mobile.changePage(target, { transition: "andrew", reverse: true });
 		} else if (timeNow - timeStamp > 100 && target === undefined) {
+			
 			timeStamp = timeNow;
 			$(".action").append("No Action Taken ");
 		}
