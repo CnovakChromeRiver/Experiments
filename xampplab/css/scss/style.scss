@@ -1,0 +1,10 @@
+/*!
+ * Global Stylesheet
+ */
+
+// Core variables and mixins
+@import "variables"; // Modify this for custom colors, font-sizes, etc
+@import "mixins";
+
+// CSS Normalize
+@import "normalize";
