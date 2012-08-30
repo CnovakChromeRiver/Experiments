@@ -15,25 +15,48 @@
 	<script src="jquery.mobile.transition-handler-simple.js"></script>
     <script src="jquery.mobile.simultaneous-transitions-simple.js"></script>
 	<script type="text/javascript" src="jquery.mobile-1.1.1.js"></script>
+	<!-- <script type="text/javascript" src="iscroll.js"></script>
+	<script type="text/javascript" src="jquery.mobile.iscrollview.js"></script>
+	<script type="text/javascript" src="pull-example.js"></script> -->
 </head>
 <body>
 	<div data-role="page">
-		<div data-role="header">
+		<div data-role="header" data-id="globalH" data-position="fixed" role="header" id="header" class="ui-bar-a">
 			<h1>My Dashboard</h1>
 		</div>
 		<div data-role="content" data-iscroll>
-			<div class="ui-grid-a">
-				<div class="ui-block-a">
+			<div class="ui-grid-a ui-grid-top">
+				<div class="quad ui-block-a" data-quad="1">
+					<h2>Expense</h2>
 					<ul data-role="listview" data-inset="true">
 						<li data-role="list-divider">My Unsubmitted Expenses</li>
-						<li><a href="draft.html" data-transition="andrew" data-link="true" data-target="draft.html">Draft <span class="ui-li-count">7</span></a></li>
-						<li><a href="retured.html">Outbox <span class="ui-li-count">0</span></a></li>
+						<li><a href="expense-draft.html" data-transition="quad-1" data-link="true" data-target="expense-draft.html">Draft <span class="ui-li-count">3</span></a></li>
+						<li><a href="expense-retured.html" data-transition="quad-1" data-link="true" data-target="expense-returned.html">Returned <span class="ui-li-count">1</span></a></li>
 						<li data-role="list-divider">My Submitted Expenses</li>
-						<li><a href="index.html">Inbox <span class="ui-li-count">12</span></a></li>
-						<li><a href="index.html">Outbox <span class="ui-li-count">0</span></a></li>
-						<li><a href="index.html">Drafts <span class="ui-li-count">4</span></a></li>
-						<li><a href="index.html">Sent <span class="ui-li-count">328</span></a></li>
-						<li><a href="index.html">Trash <span class="ui-li-count">62</span></a></li>
+						<li><a href="expense-awaiting.html">Awaiting Receipts <span class="ui-li-count">12</span></a></li>
+						<li><a href="index.html">Pending Approval <span class="ui-li-count">5</span></a></li>
+						<li><a href="index.html">Approved For Payment <span class="ui-li-count">4</span></a></li>
+					</ul>
+				</div>
+				<div class="quad ui-block-b" data-quad="2">
+					<h2>Invoice</h2>
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">My Unsubmitted Invoices</li>
+						<li><a href="invoice-draft.html" data-transition="quad-2" data-link="true" data-target="invoice-draft.html">Draft <span class="ui-li-count">7</span></a></li>
+						<li><a href="retured.html">Returned <span class="ui-li-count">0</span></a></li>
+						<li data-role="list-divider">My Submitted Invoices</li>
+						<li><a href="index.html">Awaiting Receipts <span class="ui-li-count">12</span></a></li>
+						<li><a href="index.html">Pending Approval <span class="ui-li-count">5</span></a></li>
+						<li><a href="index.html">Approved For Payment <span class="ui-li-count">4</span></a></li>
+					</ul>
+				</div>
+			</div><!-- /grid-a -->
+			<div class="ui-grid-a">
+				<div class="quad ui-block-a" data-quad="3">
+					<h2>Approval</h2>
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Expenses For My Approval</li>
+						<li><a href="approval-draft.html" data-transition="quad-3" data-link="true" data-target="approval-draft.html">Inbox <span class="ui-li-count">7</span></a></li>
 					</ul>
 				</div>
 				<div class="ui-block-b">
@@ -56,9 +79,6 @@
 				</div>
 			</div><!-- /grid-a -->
 		</div>
-		<div data-role="footer">
-			<h4>Page Footer</h4>
-		</div><!-- /footer -->
 		<div class="console">
 			<div><strong>Scale: </strong></div>
 			<div class="measure"></div>
@@ -69,12 +89,12 @@
 			<div><strong>Action: </strong></div>
 			<div class="action"></div>
 		</div>
+		<div data-role="footer" data-id="globalF" data-position="fixed" role="footer" id="footer" class="ui-bar-a">
+			<h4>Page Footer</h4>
+		</div><!-- /footer -->
 	</div>
 	<script type="text/javascript" src="jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="jgestures.js"></script>
-	<script type="text/javascript" src="iscroll.js"></script>
-	<script type="text/javascript" src="jquery.mobile.iscrollview.js"></script>
-	<script type="text/javascript" src="pull-example.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
 	<!-- <script type="text/javascript" src="http://jsconsole.com/remote.js?andrewzui"></script> -->
 </body>

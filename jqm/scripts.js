@@ -6,12 +6,13 @@ $(function() {
 	mouseWheelOut();
 	pinchOpen();
 	pinchClose();
-	//drag();
+	plugins();
+	drag();
 
 	$(document).on("pagechange", function () {
 		
 		pinchOpen();
-		//drag();
+		drag();
 		//myScroll = new iScroll( "wrapper2", { vScrollbar: true } );
 	});
 
@@ -28,7 +29,10 @@ function mouseWheelIn () {
 		event.preventDefault();
 		
 		var timeNow = new Date().getTime(),
-			target  = $(this).attr("data-target");
+			target = $(this).attr("data-target"),
+			quad = $(this).parents(".quad"),
+			quadId = $(quad).attr("data-quad"),
+			quadAnimation = "quad-" + quadId;
 
 		if(timeNow - timeStamp < 100) {
 			
@@ -39,9 +43,9 @@ function mouseWheelIn () {
 			
 			//console.log(timeNow - timeStamp + " = Thanks for waiting.");
 			//alert(delta + ", " + deltaX + ", " + deltaY);
-			$(".gesture").append("Mousewheel In at: " + (timeNow - timeStamp) + " ");
+			//$(".gesture").append("Mousewheel In at: " + (timeNow - timeStamp) + " ");
 			timeStamp = timeNow;
-			$.mobile.changePage(target, { transition: "andrew" });
+			$.mobile.changePage(target, { transition: quadAnimation });
 			//$(".gesture").append("Mousewheel In ");
 		}
 
@@ -58,7 +62,9 @@ function mouseWheelOut () {
 		event.preventDefault();
 
 		var timeNow = new Date().getTime(),
-			target  = $(".ui-page-active").attr("data-parent");
+			target  = $(".ui-page-active").attr("data-parent"),
+			quadId = $(".ui-page-active").attr("data-quad"),
+			quadAnimation = "quad-" + quadId;
 
 		if(timeNow - timeStamp < 100) {
 			
@@ -71,7 +77,7 @@ function mouseWheelOut () {
 			//alert(delta + ", " + deltaX + ", " + deltaY);
 			$(".gesture").append("Mousewheel Out at: " + (timeNow - timeStamp) + " ");
 			timeStamp = timeNow;
-			$.mobile.changePage(target, { transition: "andrew", reverse: true });
+			$.mobile.changePage(target, { transition: quadAnimation, reverse: true });
 		}
 
 	});
@@ -152,7 +158,7 @@ function pinchClose () {
 
 function drag() {
 
-	$(".ui-page-active .ui-content").on("mousedown", function(mde) {
+	$(".ui-page-active").on("mousedown", function(mde) {
 
 		var startX = mde.pageX,
 			startY = mde.pageY,
@@ -171,7 +177,7 @@ function drag() {
 
 			if ( 50 < offsetY) {
 
-				var target  = $(".page").attr("data-next");
+				var target  = $(".page").attr("data-nav-south");
 				
 				if ( target !== undefined ) {
 
@@ -179,11 +185,34 @@ function drag() {
 				}
 			} else if ( offsetY < -50 ) {
 
-				var target  = $(".page").attr("data-prev");
+				var target  = $(".page").attr("data-nav-north");
 
 				if ( target !== undefined ) {
 
 					$.mobile.changePage(target, { transition: "slidedown" });
+				}
+			} else if ( 50 < offsetX ) {
+
+				var target  = $(".page").attr("data-nav-east");
+
+				if ( target !== undefined ) {
+
+					console.log(target);
+
+					$.mobile.changePage(target, { transition: "slide", reverse: false });
+				} else {
+
+					$.mobile.changePage("error.html", { transition: "slide", reverse: false });
+				}
+			} else if ( offsetX < -50 ) {
+
+				var target  = $(".page").attr("data-nav-west");
+
+				if ( target !== undefined ) {
+
+					console.log(target);
+
+					$.mobile.changePage(target, { transition: "slide", reverse: true });
 				}
 			}
 
@@ -194,4 +223,24 @@ function drag() {
 		});
 		return false;
 	});
+}
+
+function plugins() {
+
+	// make variable height divs equal heights
+    $.fn.sameHeights = function() {
+
+    	var self = $(this);
+
+        self.each(function(){
+            var tallest = 0;
+            self.children().each(function(i){
+                if (tallest < self.height()) { tallest = self.height(); }
+            });
+            self.children().css({'height': tallest});
+        });
+
+        return this;
+    };
+
 }

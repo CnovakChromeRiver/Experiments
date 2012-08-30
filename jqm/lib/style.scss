@@ -5,6 +5,7 @@ $main-color: #999;
 $sec-color: #ccc;
 $main-font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
 
+//.ui-content { padding-top:56px; }
 h1 {line-height:18px;}
 .console {
 	display:none;
@@ -24,11 +25,47 @@ img {
 	border:1px $style $sec-color;
 }
 a:hover {text-decoration:none !important;}
-.ui-block-a {border-right:1px $style #ccc;padding:$padding;border:1px $style #d1d1d1;box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background:white;}
+.ui-grid-a {
+	background:url(http://placehold.it/1/cccccc) top center repeat-y;
+	margin-left:-15px;
+	margin-right:-15px;
+}
+.ui-block-a {padding:$padding;}//box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background:white;}
+.ui-grid-top {
+	margin-top:-15px;
+
+	border: {
+		style: $style;
+		width: 1px 0;
+		color: $sec-color;
+	}
+	.ui-block-a {
+
+	}
+	.ui-block-b {
+
+	}
+}
 .ui-block-b {padding:$padding;}
 thead tr {background:#ddd;}
 .touch .table th, .touch .table td {line-height:38px;}
 
+.iscroll-content {
+	background:white;
+
+	margin: {
+		top: 42px !important;
+	}
+	padding: {
+		bottom: 1px !important;
+	}
+	border: {
+		style: $style;
+		width: 0 0 1px 0;
+		color: #ccc;
+	}
+}
+.iscroll-scroller {}
 #scroller {
 	z-index:1;
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
@@ -39,6 +76,50 @@ thead tr {background:#ddd;}
 }
 .report.ui-li-static.ui-li {background:white;padding:1em;box-shadow:0 0 6px rgba(0,0,0,0.3);margin:2em 1em;border:1px solid #ccc}
 .report .ui-li-desc {overflow:visible;white-space:normal;margin-bottom:20px;}
+
+/* #header {
+	position:absolute; z-index:3;
+	top:0; left:0;
+	width:100%;
+	padding:0;
+	color:#eee;
+	text-align:center;
+
+	h1 {
+		min-height: 1.1em;
+		text-align: center;
+		font-size: 16px;
+		display: block;
+		margin: .6em 30% .8em;
+		padding: 0;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		outline: 0 !important;
+	}
+}
+
+#footer {
+	position:absolute; z-index:3;
+	bottom:0; left:0;
+	width:100%;
+	text-align:center;
+	padding:0;
+	border-top:1px solid #444;
+
+	h4 {
+		min-height: 1.1em;
+		text-align: center;
+		font-size: 16px;
+		display: block;
+		margin: .6em 30% .8em;
+		padding: 0;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		outline: 0 !important;
+	}
+} */
 
 @media (min-width:480px) {
 

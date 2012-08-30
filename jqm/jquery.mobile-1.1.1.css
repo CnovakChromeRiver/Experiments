@@ -1199,31 +1199,31 @@ div.ui-mobile-viewport { overflow-x: hidden; }
     from { opacity: 1; }
     to { opacity: 0; }
 }
-.andrew {
-	-webkit-transform-origin: 50% 50%;
+.quad-1 {
+	-webkit-transform-origin: 15% 22%;
 }
-.andrew.in {
+.quad-1.in {
 	-webkit-transform: scale(1);
     opacity: 1;
-	-webkit-animation-name: andrewin;
+	-webkit-animation-name: quad1In;
 	-webkit-animation-duration: 500ms;
 }
-.andrew.out {
-	-webkit-animation-name: andrewout;
+.quad-1.out {
+	-webkit-animation-name: quad1Out;
 	opacity: 0;
 	-webkit-animation-duration: 1000ms;
 }
-.andrew.in.reverse {
+.quad-1.in.reverse {
 	-webkit-transform: scale(5);
-	-webkit-animation-name: andrewRevIn;
+	-webkit-animation-name: quad1RevIn;
 	-webkit-animation-duration: 800ms;
 }
-.andrew.out.reverse {
+.quad-1.out.reverse {
 	-webkit-transform: scale(.5);
-	-webkit-animation-name: andrewRevOut;
+	-webkit-animation-name: quad1RevOut;
 	-webkit-animation-duration: 500ms;
 }
-@-webkit-keyframes andrewin {
+@-webkit-keyframes quad1In {
     from {
         -webkit-transform: scale(.5);
         opacity: 0;
@@ -1233,7 +1233,7 @@ div.ui-mobile-viewport { overflow-x: hidden; }
         opacity: 1;
     }
 }
-@-webkit-keyframes andrewout {
+@-webkit-keyframes quad1Out {
     from {
         -webkit-transform: scale(1);
         opacity: 1;
@@ -1243,7 +1243,7 @@ div.ui-mobile-viewport { overflow-x: hidden; }
         opacity: 0;
     }
 }
-@-webkit-keyframes andrewRevIn {
+@-webkit-keyframes quad1RevIn {
     from {
         -webkit-transform: scale(5);
         opacity: 0;
@@ -1253,7 +1253,7 @@ div.ui-mobile-viewport { overflow-x: hidden; }
         opacity: 1;
     }
 }
-@-webkit-keyframes andrewRevOut {
+@-webkit-keyframes quad1RevOut {
     from {
         -webkit-transform: scale(1);
         opacity: 1;
@@ -1263,6 +1263,139 @@ div.ui-mobile-viewport { overflow-x: hidden; }
         opacity: 0;
     }
 }
+
+/* Quad 2 */
+.quad-2 {
+	-webkit-transform-origin: 75% 22%;
+}
+.quad-2.in {
+	-webkit-transform: scale(1);
+    opacity: 1;
+	-webkit-animation-name: quad2In;
+	-webkit-animation-duration: 500ms;
+}
+.quad-2.out {
+	-webkit-animation-name: quad2Out;
+	opacity: 0;
+	-webkit-animation-duration: 1000ms;
+}
+.quad-2.in.reverse {
+	-webkit-transform: scale(5);
+	-webkit-animation-name: quad2RevIn;
+	-webkit-animation-duration: 800ms;
+}
+.quad-2.out.reverse {
+	-webkit-transform: scale(.5);
+	-webkit-animation-name: quad2RevOut;
+	-webkit-animation-duration: 500ms;
+}
+@-webkit-keyframes quad2In {
+    from {
+        -webkit-transform: scale(.5);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes quad2Out {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes quad2RevIn {
+    from {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes quad2RevOut {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(.5);
+        opacity: 0;
+    }
+}
+
+/* Quad 3 */
+.quad-3 {
+	-webkit-transform-origin: 15% 80%;
+}
+.quad-3.in {
+	-webkit-transform: scale(1);
+    opacity: 1;
+	-webkit-animation-name: quad3In;
+	-webkit-animation-duration: 500ms;
+}
+.quad-3.out {
+	-webkit-animation-name: quad3Out;
+	opacity: 0;
+	-webkit-animation-duration: 1000ms;
+}
+.quad-3.in.reverse {
+	-webkit-transform: scale(5);
+	-webkit-animation-name: quad3RevIn;
+	-webkit-animation-duration: 800ms;
+}
+.quad-3.out.reverse {
+	-webkit-transform: scale(.5);
+	-webkit-animation-name: quad3RevOut;
+	-webkit-animation-duration: 500ms;
+}
+@-webkit-keyframes quad3In {
+    from {
+        -webkit-transform: scale(.5);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes quad3Out {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes quad3RevIn {
+    from {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes quad3RevOut {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(.5);
+        opacity: 0;
+    }
+}
+
 .fade.out {
 	opacity: 0;
 	-webkit-animation-duration: 125ms;
