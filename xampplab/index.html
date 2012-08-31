@@ -11,19 +11,10 @@
 	<script type="text/javascript" src="js/libs/handlebars/base.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 
-	<script type="text/x-handlebars-template" id="entry-template">
-		<div class="entry">
-			<h1>{{title}}</h1>
-			{{#with story}}
-			<div class="intro">
-				{{intro}}
-			</div>
-			<div class="body">
-				{{body}}
-			</div>
-			{{/with}}
-		</div>
+	<script type="text/x-handlebars-template" id="my-nav">
+		{{#list nav}}
+			<a href="{{url}}">{{title}}</a>
+		{{/list}}
 	</script>
-	<script type="text/x-handlebars-template" id="list"></script>
 </body>
 </html>

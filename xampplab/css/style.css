@@ -317,3 +317,10 @@ table {
 
 body {
   background-color: #0088cc; }
+
+a {
+  color: #f89406;
+  text-decoration: none; }
+  a:hover {
+    color: #ad6704;
+    text-decoration: underline; }

@@ -8,3 +8,16 @@
 body {
 	background-color: $bodyBackground;
 }
+
+// Links
+// -------------------------
+
+a {
+	color: $linkColor;
+	text-decoration:none;
+
+	&:hover {
+		color: $linkColorHover;
+		text-decoration: underline;
+	}
+}

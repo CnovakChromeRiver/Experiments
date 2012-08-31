@@ -1199,8 +1199,72 @@ div.ui-mobile-viewport { overflow-x: hidden; }
     from { opacity: 1; }
     to { opacity: 0; }
 }
+.quad-5 {
+	-webkit-transform-origin: 50% 50%;
+}
+.quad-5.in {
+	-webkit-transform: scale(1);
+	opacity: 1;
+	-webkit-animation-name: centerIn;
+	-webkit-animation-duration: 500ms;
+}
+.quad-5.out {
+	opacity: 0;
+	-webkit-animation-name: centerOut;
+	-webkit-animation-duration: 1000ms;
+}
+.quad-5.in.reverse {
+	-webkit-transform: scale(5);
+	-webkit-animation-name: centerInRev;
+	-webkit-animation-duration: 800ms;
+}
+.quad-5.out.reverse {
+	-webkit-transform: scale(0.5);
+	-webkit-animation-name: centerOutRev;
+	-webkit-animation-duration: 500ms;
+}
+@-webkit-keyframes centerIn {
+    from {
+        -webkit-transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes centerOut {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes centerInRev {
+    from {
+        -webkit-transform: scale(5);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes centerOutRev {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(0.5);
+        opacity: 0;
+    }
+}
 .quad-1 {
-	-webkit-transform-origin: 15% 22%;
+	-webkit-transform-origin: 11% 23%;
 }
 .quad-1.in {
 	-webkit-transform: scale(1);
@@ -1219,7 +1283,7 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 	-webkit-animation-duration: 800ms;
 }
 .quad-1.out.reverse {
-	-webkit-transform: scale(.5);
+	-webkit-transform: scale(0.5);
 	-webkit-animation-name: quad1RevOut;
 	-webkit-animation-duration: 500ms;
 }
@@ -1332,7 +1396,7 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 
 /* Quad 3 */
 .quad-3 {
-	-webkit-transform-origin: 15% 80%;
+	-webkit-transform-origin: 15% 70%;
 }
 .quad-3.in {
 	-webkit-transform: scale(1);

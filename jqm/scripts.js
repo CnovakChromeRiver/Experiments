@@ -30,9 +30,7 @@ function mouseWheelIn () {
 		
 		var timeNow = new Date().getTime(),
 			target = $(this).attr("data-target"),
-			quad = $(this).parents(".quad"),
-			quadId = $(quad).attr("data-quad"),
-			quadAnimation = "quad-" + quadId;
+			animation = $(this).attr("data-transition");
 
 		if(timeNow - timeStamp < 100) {
 			
@@ -45,7 +43,7 @@ function mouseWheelIn () {
 			//alert(delta + ", " + deltaX + ", " + deltaY);
 			//$(".gesture").append("Mousewheel In at: " + (timeNow - timeStamp) + " ");
 			timeStamp = timeNow;
-			$.mobile.changePage(target, { transition: quadAnimation });
+			$.mobile.changePage(target, { transition: animation });
 			//$(".gesture").append("Mousewheel In ");
 		}
 
