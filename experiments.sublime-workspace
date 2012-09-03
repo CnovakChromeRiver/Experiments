@@ -48,7 +48,12 @@
 	"buffers":
 	[
 		{
+<<<<<<< HEAD
 			"file": "/C/xampp/htdocs/zui/books/model/book/bookCollection.js",
+=======
+<<<<<<< HEAD
+			"file": "/C/xampp/htdocs/xampplab/index.html",
+>>>>>>> Mac Project
 			"settings":
 			{
 				"buffer_size": 1201,
@@ -75,8 +80,36 @@
 			"file": "/C/xampp/htdocs/zui/books/modules/list/bookViewTemplate.html",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 692,
 				"line_ending": "Unix"
+=======
+				"buffer_size": 6767,
+				"line_ending": "Windows"
+=======
+			"file": "jqm/scripts2.js",
+			"settings":
+			{
+				"buffer_size": 1792,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "jqm/index.html",
+			"settings":
+			{
+				"buffer_size": 1244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "jqm/bmw.html",
+			"settings":
+			{
+				"buffer_size": 818,
+				"line_ending": "Unix"
+>>>>>>> Mac Project
+>>>>>>> Mac Project
 			}
 		},
 		{
@@ -176,6 +209,7 @@
 	},
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/C/xampp/htdocs/xampplab/css/scss/_scaffolding.scss",
 		"/C/xampp/htdocs/xampplab/css/scss/variables.scss",
 		"/C/xampp/htdocs/xampplab/css/scss/_normalize.scss",
@@ -187,6 +221,9 @@
 		"/C/xampp/htdocs/zui/jqm/jquery.mobile-1.1.1.css",
 		"/C/xampp/htdocs/zui/books/model/book/bookCollection.js",
 		"/C/xampp/htdocs/zui/books/js/router.js",
+=======
+<<<<<<< HEAD
+>>>>>>> Mac Project
 		"/C/xampp/htdocs/zui/jqm/lib/bootstrap.scss",
 		"/C/xampp/htdocs/zui/jqm/bootstrap-2.0.4.css",
 		"/C/xampp/htdocs/xampplab/js/lib/handlebars.js",
@@ -271,7 +308,31 @@
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/index.html",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/requirejs/js/main.js",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/requirejs/js/book.js",
+=======
+		"/Applications/MAMP/htdocs/tests/books/js/main.js",
+		"/Applications/MAMP/htdocs/tests/books/index.html",
+		"/Applications/MAMP/htdocs/tests/books/model/book/bookCollection.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/model/book/bookModel.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/model/book/bookCollection.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/modules/home/homeViewTemplate.html",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/data/category1.json",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/modules/list/bookViewTemplate.html",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/modules/list/books.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/js/router.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/js/app.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/index.html",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/modules/book/bookCollection.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/modules/book/bookModel.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/js/main.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/js/vendor/jqm/jqm-config.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/modules/home/home.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/js/vendor/require/require.js",
+		"/Users/andrew/Sites/Experiments/backbone-jqm-require/css/jquery.mobile-1.1.1.css",
+		"/Users/andrew/Sites/Experiments/backbone-jqm/readme.md",
+		"/Users/andrew/Downloads/jquery-require-sample/r.js",
+>>>>>>> Mac Project
 		"/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
+		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/main.js",
 		"/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/jqm/jqm-config.js",
 		"/C/Users/ahenderson/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
@@ -281,10 +342,12 @@
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/jqm/jquery_1.8_min.js",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/jqm/jquery.mobile-1.1.1.js",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/css/style.css",
+		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/index.html",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/backbone/backbone_amd.js",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm/index.html",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/require/require.js",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/require/text.js",
+		"/C/Users/ahenderson/Documents/GitHub/Experiments/requirejs/js/main.js",
 		"/C/Users/ahenderson/Documents/GitHub/Experiments/backbone-jqm-require/js/vendor/jqm/jquery-1.8.0.min.js",
 		"/C/Users/ahenderson/Dropbox/At-Home/Work/compass/stylesheets/screen.css",
 		"/C/Users/ahenderson/Dropbox/At-Home/Work/compass/sass/screen.scss",
@@ -303,7 +366,86 @@
 		"/Applications/MAMP/htdocs/vroozi/app.js",
 		"/Applications/MAMP/htdocs/vroozi/index.html",
 		"/Applications/MAMP/htdocs/vroozi/js/students.js",
+<<<<<<< HEAD
 		"/Applications/MAMP/htdocs/vroozi/process_form.php"
+=======
+		"/Applications/MAMP/htdocs/vroozi/process_form.php",
+		"/Applications/MAMP/htdocs/vroozi/test.js",
+		"/Applications/MAMP/htdocs/vroozi/test.html",
+		"/Applications/MAMP/htdocs/vroozi/js/main.js",
+		"/Applications/MAMP/htdocs/vroozi/form.html",
+		"/Applications/MAMP/htdocs/vroozi/students.php",
+		"/Applications/MAMP/htdocs/vroozi/form.php",
+		"/Applications/MAMP/htdocs/vroozi/test.php",
+		"/Applications/MAMP/htdocs/vroozi/students.html",
+		"/Users/andrew/node_dev/express_dev/myapp.js",
+<<<<<<< HEAD
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option1/public/js/script.js"
+=======
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option1/public/js/script.js",
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option1/app.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/js/test.js",
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option2/public/js/script.js",
+		"/Users/andrew/node_dev/express_dev/backbone_fundamentals/practicals/stacks/option2/app.js",
+		"/Users/andrew/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/andrew/node_dev/express_dev/app.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/test.html",
+		"/Users/andrew/Desktop/note",
+		"/Applications/MAMP/htdocs/ajax/jquery.html",
+		"/Applications/MAMP/htdocs/ajax/load.html",
+		"/Users/andrew/Desktop/cc.html",
+		"/Applications/MAMP/htdocs/ajax/ajax.php",
+		"/Applications/MAMP/htdocs/ajax/index.php",
+		"/Applications/MAMP/htdocs/ajax/example/index.html",
+		"/Applications/MAMP/htdocs/ajax/example/ajax.php",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/js/todos.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/todos.html",
+		"/Users/andrew/Downloads/demo 3/js/app.js",
+		"/Users/andrew/Sites/mightclub/friends.html",
+		"/Users/andrew/Sites/mightclub/js/script.js",
+		"/Users/andrew/Sites/mightclub/js/plugins.js",
+		"/Users/andrew/Sites/mightclub/css/bootstrap.css",
+		"/Users/andrew/Sites/mightclub/css/style.css",
+		"/Users/andrew/Sites/mightclub/search.html",
+		"/Users/andrew/Sites/mightclub/humans.txt",
+		"/Users/andrew/Sites/mightclub/goals.html",
+		"/Users/andrew/Sites/mightclub/cassidy.html",
+		"/Users/andrew/Sites/mightclub/sitemap.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/todo.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/backbonejs/app.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/index.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/jquery.datasort2.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/datasort/style.css",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/index.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/style.css",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/jquery.tooltip.js",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/tooltip.html",
+		"/Users/andrew/Dropbox/LAMPS+/Plugins/custom tests/tooltip/:* style *:",
+		"/Users/andrew/Downloads/__jquery.tablesorter/jquery.tablesorter.js",
+		"/Users/andrew/Sites/mightclub/home.html",
+		"/Users/andrew/Sites/mightclub/index.html",
+		"/Users/andrew/Sites/mightclub/profile.html",
+		"/Users/andrew/Sites/mightclub/css/bootstrap-responsive.css",
+		"/Users/andrew/Sites/mightclub/index2.html",
+		"/Users/andrew/node_dev/express_dev/views/fun.ejs",
+		"/Users/andrew/node_dev/express_dev/views/users.jade",
+		"/Users/andrew/node_dev/express_dev/routes/index.js",
+		"/Users/andrew/node_dev/express_dev/views/layout.jade",
+		"/Users/andrew/node_dev/express_dev/views/contact.jade",
+		"/Users/andrew/node_dev/express_dev/views/profile.jade",
+		"/Users/andrew/node_dev/express_dev/routes/contact.js",
+		"/Users/andrew/myapp/myapp.js",
+		"/Users/andrew/myapp/myapp.html",
+		"/Users/andrew/myapp/.meteor/local/build/app/myapp.js",
+		"/Users/andrew/myapp/.meteor/local/build/static/myapp.js",
+		"/Users/andrew/node_dev/todo_app/public/css/style.css",
+		"/Users/andrew/node_dev/todo_app/config/router.js",
+		"/Users/andrew/node_dev/todo_app/app/views/todos/show.html.ejs",
+		"/Users/andrew/node_dev/todo_app/app/views/todos/index.html.ejs",
+		"/Users/andrew/node_dev/todo_app/app/views/todos/add.html.ejs",
+		"/Users/andrew/node_dev/todo_app/app/controllers/todos.js"
+>>>>>>> Mac Project
+>>>>>>> Mac Project
 	],
 	"find":
 	{
@@ -311,9 +453,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -321,7 +464,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"init",
+=======
+<<<<<<< HEAD
+>>>>>>> Mac Project
 			"@media",
 			"grid-core",
 			"prototype",
@@ -352,6 +499,10 @@
 			"pinchOpen",
 			"listen",
 			"listening",
+=======
+			"”",
+			"“",
+>>>>>>> Mac Project
 			".View",
 			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc\"",
 			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;",
@@ -370,13 +521,20 @@
 		"regex": false,
 		"replace_history":
 		[
+<<<<<<< HEAD
 			"start",
+=======
+<<<<<<< HEAD
+>>>>>>> Mac Project
 			"",
 			"<td>Report",
 			"report",
 			".action",
 			".gesture",
 			".result",
+=======
+			"\"",
+>>>>>>> Mac Project
 			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding:8px\"",
 			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding:8px",
 			"style=\"border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;"
@@ -395,25 +553,141 @@
 			[
 				{
 					"buffer": 0,
+<<<<<<< HEAD
 					"file": "/C/xampp/htdocs/zui/books/model/book/bookCollection.js",
 					"settings":
 					{
 						"buffer_size": 1201,
+=======
+<<<<<<< HEAD
+					"file": "/C/xampp/htdocs/xampplab/index.html",
+					"settings":
+					{
+						"buffer_size": 726,
+=======
+					"file": "jqm/scripts2.js",
+					"settings":
+					{
+						"buffer_size": 1792,
+>>>>>>> Mac Project
+>>>>>>> Mac Project
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								0,
 								0
+=======
+<<<<<<< HEAD
+								485,
+								503
+=======
+								896,
+								896
+>>>>>>> Mac Project
+>>>>>>> Mac Project
 							]
 						],
 						"settings":
 						{
+<<<<<<< HEAD
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+=======
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"indent": 1.0,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+>>>>>>> Mac Project
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -423,26 +697,259 @@
 				},
 				{
 					"buffer": 1,
+<<<<<<< HEAD
 					"file": "/C/xampp/htdocs/zui/books/model/book/bookModel.js",
 					"settings":
 					{
 						"buffer_size": 159,
+=======
+<<<<<<< HEAD
+					"file": "/C/xampp/htdocs/xampplab/js/scripts.js",
+					"settings":
+					{
+						"buffer_size": 416,
+=======
+					"file": "jqm/index.html",
+					"settings":
+					{
+						"buffer_size": 1244,
+>>>>>>> Mac Project
+>>>>>>> Mac Project
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								0,
 								0
+=======
+<<<<<<< HEAD
+								412,
+								412
+=======
+								1017,
+								716
+>>>>>>> Mac Project
+>>>>>>> Mac Project
 							]
 						],
 						"settings":
 						{
+<<<<<<< HEAD
+=======
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"indent": 1.0,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+>>>>>>> Mac Project
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+<<<<<<< HEAD
+=======
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "jqm/bmw.html",
+					"settings":
+					{
+						"buffer_size": 818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								504,
+								504
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"indent": 1.0,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+>>>>>>> Mac Project
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -571,7 +1078,11 @@
 	},
 	"output.jslint_result_view":
 	{
+<<<<<<< HEAD
 		"height": 33.0
+=======
+		"height": 27.0
+>>>>>>> Mac Project
 	},
 	"replace":
 	{
