@@ -64,6 +64,7 @@ define(['jquery', 'handlebars', 'zoomooz'], function ($, Handlebars, zoomooz) {
 		},
 		template = Handlebars.compile(source),
 		html = template(context);
+		
 
 	$("#content").append(html);
 

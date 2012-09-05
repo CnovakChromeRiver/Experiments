@@ -1,0 +1,37 @@
+/* Additional Styles for Prototype */
+img { float:left; }
+#content {
+	width:960px;
+	margin:0 auto;
+}
+
+.tile {
+	float:left;
+	-webkit-box-sizing: border-box;
+	padding:5px 15px;
+	border:1px solid #111;
+	background-color:#ccc;
+	margin:5px;
+	position:relative;
+	/*-webkit-transform-style: preserve-3d;-webkit-transform: translate3d(0px, 0px, -2000px);*/
+}
+.inner-zoom {
+	-webkit-transform: scale(0.3);
+	border:1px solid #111;
+	position:absolute;
+	right:0px;
+	top:0px;
+	background:green;
+	width:50px;
+	height:20px;
+}
+.inner-inner-zoom {
+	-webkit-transform: scale(0.3);
+	border:1px solid #111;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background:orange;
+	width:50px;
+	height:20px;
+}
