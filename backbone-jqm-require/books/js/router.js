@@ -21,7 +21,7 @@ define(['jquery', 'underscore', 'backbone','modules/home/home',
 	    showHome:function(actions){
 	    	// will render home view and navigate to homeView
 	    	var homeView=new HomeView();
-	    	homeView.render();
+            homeView.render();
 	    	this.changePage(homeView);
 	    },
 
