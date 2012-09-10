@@ -9,7 +9,7 @@ var app = app || {};
 
 	var PhotoCollection = Backbone.Collection.extend({
 
-		model: app.Photo,
+		model: app.PhotoModel,
 
 		localStorage: new Backbone.LocalStorage("photo-gallery"),
 
@@ -25,7 +25,7 @@ var app = app || {};
 		},
 
 		// Photos are sorted by their original insertion order.
-		comparator: function () {
+		comparator: function ( photo ) {
 			
 			return photo.get('order');
 		}

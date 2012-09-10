@@ -7,7 +7,7 @@ var app = app || {};
 	// Photo Model
 	// -----------
 
-	var PhotoModel = Backbone.Model.extend({
+	app.PhotoModel = Backbone.Model.extend({
 
 		defaults: {
 			src: '',
@@ -24,8 +24,5 @@ var app = app || {};
 		}
 
 	});
-
-	// Create our global **PhotoModel**.
-	app.PhotoModel = new PhotoModel();
 
 } () );

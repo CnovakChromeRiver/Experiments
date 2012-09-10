@@ -7,12 +7,12 @@ $(function () {
 	// Photo View
 	// ----------
 
-	var PhotoView = Backbone.View.extend({
+	app.PhotoView = Backbone.View.extend({
 
 		tagName: 'li',
 
 		// Cache the template function for a single item.
-		template: _.template( $('item-template').html() ),
+		template: _.template( $('#item-template').html() ),
 
 		// The DOM events specific to an item.
 		events: {
@@ -27,9 +27,9 @@ $(function () {
 		// a one-to-one correspondence between a **PhotoModel** and a **PhotoView** in this
 		// app, we set a direct reference on the model for convenience.
 		initialize: function () {
-
-			this.model.on( 'change', this.render, this ),
-			this.model.on( 'destroy', this.remove, this )
+			console.log(this);
+			this.model.on( 'change', this.render, this );
+			this.model.on( 'destroy', this.remove, this );
 		},
 
 		render: function () {
@@ -43,7 +43,7 @@ $(function () {
 		toggleLike: function () {
 
 			this.model.toggle();
-		}
+		},
 
 		// Switch this view into "editing" mode, displaying the hidden input fields.
 		edit: function () {
@@ -79,6 +79,6 @@ $(function () {
 		}
 
 
-	})
+	});
 
 });
