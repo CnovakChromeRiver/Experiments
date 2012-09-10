@@ -1,6 +1,6 @@
 var app = app || {};
 
-(function () {
+$(function () {
 
 	'use strict';
 
@@ -12,7 +12,9 @@ var app = app || {};
 		defaults: {
 			src: '',
 			title: '',
-			description: ''
+			description: '',
+			topPos: '0px',
+			liked: false
 		},
 
 		// Toggle the "liked" status of this photo
@@ -25,4 +27,4 @@ var app = app || {};
 
 	});
 
-} () );
+});

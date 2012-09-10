@@ -1,6 +1,6 @@
 var app = app || {};
 
-(function () {
+$(function () {
 
 	'use strict';
 
@@ -11,7 +11,7 @@ var app = app || {};
 
 		model: app.PhotoModel,
 
-		localStorage: new Backbone.LocalStorage("photo-gallery"),
+		localStorage: new Backbone.LocalStorage('photo-gallery'),
 
 		// We keep the Photos in sequential order, despite being saved by unordered
 		// GUID in the database. This generates the next order number for new items.
@@ -25,9 +25,9 @@ var app = app || {};
 		},
 
 		// Photos are sorted by their original insertion order.
-		comparator: function ( photo ) {
+		comparator: function ( photoModel ) {
 			
-			return photo.get('order');
+			return photoModel.get('order');
 		}
 
 	});
@@ -35,4 +35,4 @@ var app = app || {};
 	// Create our global **PhotoCollection**.
 	app.PhotoCollection = new PhotoCollection();
 
-} () );
+});

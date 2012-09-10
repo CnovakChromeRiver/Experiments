@@ -15,61 +15,90 @@ $(function () {
 		el: '#galleryapp',
 
 		events: {
-			'click #submit': 'create'
+			'click #add-photo-btn': 'showEntryForm',
+			'click #submit': 'create',
+			'click #cancel': 'cancel'
 		},
 
 		initialize: function () {
 
-			this.$newPhotoSource = this.$('#new-photo-source');
+			this.$entryForm = $('#entry-form');
+
+			this.$newPhotoSource = $('#new-photo-source');
 			this.$newPhotoTitle = this.$('#new-photo-title');
 			this.$newPhotoDescription = this.$('#new-photo-description');
 
-			window.app.PhotoCollection.on( 'add', this.addAll, this );
+			window.app.PhotoCollection.on( 'add', this.addOne, this );
 			window.app.PhotoCollection.on( 'reset', this.addAll, this );
+			window.app.PhotoCollection.on( 'change:title', this.render, this );
+			window.app.PhotoCollection.on( 'change:description', this.render, this );
+			window.app.PhotoCollection.on( 'change:topPos', this.render, this );
+
+			window.app.PhotoCollection.on( 'reset', this.render, this );
 
 			this.$main = this.$('#main');
-			this.$photoCollection = this.$('#photo-collection');
+			//this.$photoCollection = this.$('#photo-collection');
 
 			app.PhotoCollection.fetch();
 		},
 
 		render: function () {
-
 			if ( app.PhotoCollection.length ) {
 				this.$main.show();
 			} else {
 				this.$main.hide();
+				this.showEntryForm();
 			}
+		},
+
+		showEntryForm: function () {
+			this.$entryForm.show();
 		},
 
 		// Add a single photo to the list by creating a view for it, and
 		// appending its element to the '<ul>'.
 		addOne: function ( newPhotoModel ) {
 			var view = new app.PhotoView({ model: newPhotoModel });
-			this.$photoCollection.append( view.render.el );
+			$('#photo-collection').append( view.render().el );
 		},
 
 		// Add all items in the **PhotoCollection** at once.
 		addAll: function () {
-			this.$photoCollection.empty();
+			$('#photo-collection').empty();
+			app.PhotoCollection.each( this.addOne, this );
 		},
 
 		// Generate the attributes for a new photo.
 		newAttributes: function () {
 			return {
-				src: this.$newPhotoSource,
-				title: this.$newPhotoTitle,
-				description: this.$newPhotoDescription
+				src: this.$newPhotoSource.val().trim(),
+				title: this.$newPhotoTitle.val().trim(),
+				description: this.$newPhotoDescription.val().trim(),
+				topPos: '0px',
+				order: app.PhotoCollection.nextOrder(),
+				liked: false
 			};
 		},
 
 		create: function () {
-			console.log(app.PhotoCollection)
 			app.PhotoCollection.create( this.newAttributes() );
+
+			this.$entryForm.hide();
 			
 			this.$newPhotoSource.val('');
 			this.$newPhotoTitle.val('');
 			this.$newPhotoDescription.val('');
+
+			return false;
+		},
+		cancel: function () {
+			this.$entryForm.hide();
+
+			this.$newPhotoSource.val('');
+			this.$newPhotoTitle.val('');
+			this.$newPhotoDescription.val('');
+
+			return false;
 		}
 	});
 

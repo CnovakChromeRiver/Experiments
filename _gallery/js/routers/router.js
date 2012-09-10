@@ -1,6 +1,6 @@
 var app = app || {};
 
-(function () {
+$(function () {
 
 	'use strict';
 
@@ -22,4 +22,4 @@ var app = app || {};
 	app.Router = new Router();
 	Backbone.history.start();
 
-} ( ) );
+});

@@ -4,38 +4,61 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- <link rel="stylesheet" href="css/base.css"> -->
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body class="container">
 	<section id="galleryapp" class="row">
 		<div id="header" class="span12">
-			<h1>Photo Gallery</h1>
-			<table>
-				<tr>
-					<th><label for="new-photo-source">Source:</label></th>
-					<td><input type="text" id="new-photo-source" placeholder="http://" autofocus></td>
-					<th><label for="new-photo-title">Title:</label></th>
-					<td><input type="text" id="new-photo-title" placeholder="e.g. Stacy's Wedding"></td>
-				</tr>
-			</table>
-			<label for="new-photo-description">Description:</label>
-			<textarea id="new-photo-description" cols="30" rows="10"></textarea>
-			<a href="#" id="submit" class="btn btn-primary">Submit</a>
+			<h1>Photo Gallery <a href="#" id="add-photo-btn">Add Photo</a></h1>
+			<section id="entry-form" class="entry-form">
+				<h2>Add a Photo</h2>
+				<table>
+					<tr>
+						<th><label for="new-photo-source">Source:</label></th>
+						<td><input type="text" id="new-photo-source" placeholder="http://" autofocus></td>
+						<th><label for="new-photo-title">Title:</label></th>
+						<td><input type="text" id="new-photo-title" placeholder="e.g. Stacy's Wedding"></td>
+					</tr>
+				</table>
+				<label for="new-photo-description">Description:</label>
+				<textarea id="new-photo-description" placeholder="Say something about this photo..."></textarea>
+				<a href="#" id="submit" class="btn btn-primary">Submit</a> <a href="#" id="cancel" class="btn">Cancel</a>
+			</section>
 		</div>
 		<div id="main" class="span12">
-			<ul id="photo-collection">
-			</ul>
+			<ul id="photo-collection"></ul>
 		</div>
 	</section>
 	<script type="text/template" id="item-template">
 		<div class="view">
-			<img src="<%= src %>" alt="<%= title %>" title="<%= title %>">
+			<h3><%= title %></h3>
+			<div class="image-wrapper">
+				<img src="<%= src %>" alt="<%= title %>" title="<%= title %>" style="top:<%= topPos %>">
+			</div>
 			<p><%= description %></p>
-			<a href="#" class="btn edit-photo">Edit</a> <a href="#" class="btn delete-photo">Delete</a>
-			<label for="toggle-like">Like:</label> <input type="checkbox"></input>
-			<input class="edit-title-input" type="text" value="<%= title %>" <%= liked ? 'checked' : '' %>>
-			<a href="#" class="save-edit btn btn-primary">Save</a>
-			<a href="#" class="cancel-edit btn">Cancel</a>
+			<table>
+				<tr>
+					<th><label>Like:</label></th>
+					<td><input class="toggle-like" type="checkbox" <%= liked ? 'checked' : '' %>></input></td>
+				</tr>
+			</table>
+			<section class="action-section">
+				<a href="#" class="btn edit-photo">Edit</a> <a href="#" class="btn btn-danger delete-photo">Delete</a>
+			</section>
+			<section class="edit-attributes-section">
+				<input class="edit-title-input" type="text" value="<%= title %>">
+				<textarea class="edit-description-field"><%= description %></textarea>
+				<h4>Reposition Thumbnail</h4>
+				<table>
+					<tr>
+						<th>Top:</th>
+						<td><input type="text" class="span2 edit-top-position" placeholder="e.g. -220px" value="<%= topPos %>"></td>
+					</tr>
+				</table> 
+				<hr>
+				<a href="#" class="save-edit btn btn-primary">Save</a>
+				<a href="#" class="cancel-edit btn">Cancel</a>
+			</section>
 		</div>
 	</script>
 	<script src="js/lib/jquery.js"></script>

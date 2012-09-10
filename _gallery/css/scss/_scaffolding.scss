@@ -1,0 +1,14 @@
+// Scaffolding
+// -----------
+
+// Body reset
+// ----------
+
+body {
+	margin: 0;
+	line-height: $baseLineHeight;
+	font-family: $baseFontFamily;
+	background-color: $bodyBackgroundColor;
+	background-image: $bodyBackgroundImage;
+	color: $darkGray;
+}
