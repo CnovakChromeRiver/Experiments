@@ -1,5 +1,6 @@
-define(['jquery', 'underscore', 'backbone', 'localStorage', '_app', 'models/PhotoModel'],
-function ( $, _, Backbone, localStorage, app, PhotoModel ) {
+var app = app || {};
+
+$(function () {
 
 	'use strict';
 
