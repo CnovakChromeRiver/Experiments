@@ -1,6 +1,5 @@
-var app = app || {};
-
-$(function () {
+define(['jquery', 'underscore', 'backbone', 'localStorage', '_app', 'collections/PhotoCollection'],
+function ( $, _, Backbone, localStorage, app, PhotoCollection ) {
 
 	'use strict';
 
@@ -8,7 +7,7 @@ $(function () {
 	// ---------------
 
 	// Our overall **AppView** is the top-level piece of UI.
-	app.AppView = Backbone.View.extend({
+	var AppView = Backbone.View.extend({
 
 		// Instead of generating a new element, bind to the existing skeleton of
 		// the App already present in the HTML.
@@ -101,5 +100,7 @@ $(function () {
 			return false;
 		}
 	});
+
+	return AppView;
 
 });

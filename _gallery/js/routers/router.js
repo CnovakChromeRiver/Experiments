@@ -1,6 +1,5 @@
-var app = app || {};
-
-$(function () {
+define(['jquery', 'underscore', 'backbone', 'localStorage', '_app', 'views/appView'],
+function ( $, _, Backbone, localStorage, app, AppView ) {
 
 	'use strict';
 
@@ -14,12 +13,12 @@ $(function () {
 
 		display: function () {
 
+			app.AppView = new AppView();
 			// Trigger a collection reset/addAll
 			window.app.PhotoCollection.trigger('reset');
 		}
 	});
 
-	app.Router = new Router();
-	Backbone.history.start();
+	return Router;
 
 });
