@@ -1,14 +1,13 @@
-var app = app || {};
-
-$(function () {
+define(['jquery', 'backbone', 'localStorage', 'views/photoView'],
+function ( $, Backbone, localStorage, PhotoView ) {
 
 	'use strict';
 
-	// The Application
-	// ---------------
+	// The Application View
+	// --------------------
 
 	// Our overall **AppView** is the top-level piece of UI.
-	app.AppView = Backbone.View.extend({
+	gallery.AppView = Backbone.View.extend({
 
 		// Instead of generating a new element, bind to the existing skeleton of
 		// the App already present in the HTML.
@@ -28,22 +27,22 @@ $(function () {
 			this.$newPhotoTitle = this.$('#new-photo-title');
 			this.$newPhotoDescription = this.$('#new-photo-description');
 
-			window.app.PhotoCollection.on( 'add', this.addOne, this );
-			window.app.PhotoCollection.on( 'reset', this.addAll, this );
-			window.app.PhotoCollection.on( 'change:title', this.render, this );
-			window.app.PhotoCollection.on( 'change:description', this.render, this );
-			window.app.PhotoCollection.on( 'change:topPos', this.render, this );
+			this.collection.on( 'add', this.addOne, this );
+			this.collection.on( 'reset', this.addAll, this );
+			this.collection.on( 'change:title', this.render, this );
+			this.collection.on( 'change:description', this.render, this );
+			this.collection.on( 'change:topPos', this.render, this );
 
-			window.app.PhotoCollection.on( 'reset', this.render, this );
+			this.collection.on( 'reset', this.render, this );
 
 			this.$main = this.$('#main');
 			//this.$photoCollection = this.$('#photo-collection');
 
-			app.PhotoCollection.fetch();
+			this.collection.fetch();
 		},
 
 		render: function () {
-			if ( app.PhotoCollection.length ) {
+			if ( this.collection.length ) {
 				this.$main.show();
 			} else {
 				this.$main.hide();
@@ -58,14 +57,14 @@ $(function () {
 		// Add a single photo to the list by creating a view for it, and
 		// appending its element to the '<ul>'.
 		addOne: function ( newPhotoModel ) {
-			var view = new app.PhotoView({ model: newPhotoModel });
+			var view = new gallery.PhotoView({ model: newPhotoModel });
 			$('#photo-collection').append( view.render().el );
 		},
 
 		// Add all items in the **PhotoCollection** at once.
 		addAll: function () {
 			$('#photo-collection').empty();
-			app.PhotoCollection.each( this.addOne, this );
+			this.collection.each( this.addOne, this );
 		},
 
 		// Generate the attributes for a new photo.
@@ -75,15 +74,18 @@ $(function () {
 				title: this.$newPhotoTitle.val().trim(),
 				description: this.$newPhotoDescription.val().trim(),
 				topPos: '0px',
-				order: app.PhotoCollection.nextOrder(),
+				order: this.collection.nextOrder(),
 				liked: false
 			};
 		},
 
 		create: function () {
-			app.PhotoCollection.create( this.newAttributes() );
-
-			this.$entryForm.hide();
+			if ( this.$newPhotoSource.val().trim() ) {
+				this.collection.create( this.newAttributes() );
+				this.$entryForm.hide();
+			} else {
+				alert("Must attach a photo!")
+			}
 			
 			this.$newPhotoSource.val('');
 			this.$newPhotoTitle.val('');
@@ -101,5 +103,7 @@ $(function () {
 			return false;
 		}
 	});
+
+	return gallery.AppView;
 
 });

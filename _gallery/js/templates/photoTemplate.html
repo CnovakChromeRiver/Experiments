@@ -1,0 +1,30 @@
+<div class="view">
+	<h3>{{title}}</h3>
+	<div class="image-wrapper">
+		<img src="{{src}}" alt="{{title}}" title="{{title}}" style="top:{{topPos}}">
+	</div>
+	<p>{{description}}</p>
+	<table>
+		<tr>
+			<th><label>Like:</label></th>
+			<td><input class="toggle-like" type="checkbox" {{#if liked}} checked {{/if}}></input></td>
+		</tr>
+	</table>
+	<section class="action-section">
+		<a href="#" class="btn edit-photo">Edit</a> <a href="#" class="btn btn-danger delete-photo">Delete</a>
+	</section>
+	<section class="edit-attributes-section">
+		<input class="edit-title-input" type="text" value="{{title}}" placeholder="Title">
+		<textarea class="edit-description-field" placeholder="Say something about this photo...">{{description}}</textarea>
+		<h4>Reposition Thumbnail</h4>
+		<table>
+			<tr>
+				<th>Top:</th>
+				<td><input type="text" class="span2 edit-top-position" placeholder="e.g. -220px" value="{{topPos}}"></td>
+			</tr>
+		</table> 
+		<hr>
+		<a href="#" class="save-edit btn btn-primary">Save</a>
+		<a href="#" class="cancel-edit btn">Cancel</a>
+	</section>
+</div>

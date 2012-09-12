@@ -1,15 +1,14 @@
-var app = app || {};
-
-$(function () {
+define(['jquery', 'underscore', 'backbone', 'localStorage', 'models/PhotoModel'],
+function ( $, _, Backbone, localStorage, PhotoModel ) {
 
 	'use strict';
 
 	// Photo Collection
 	// ----------------
 
-	var PhotoCollection = Backbone.Collection.extend({
+	gallery.PhotoCollection = Backbone.Collection.extend({
 
-		model: app.PhotoModel,
+		model: PhotoModel,
 
 		localStorage: new Backbone.LocalStorage('photo-gallery'),
 
@@ -32,7 +31,6 @@ $(function () {
 
 	});
 
-	// Create our global **PhotoCollection**.
-	app.PhotoCollection = new PhotoCollection();
+	return gallery.PhotoCollection;
 
 });

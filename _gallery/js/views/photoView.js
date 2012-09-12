@@ -1,18 +1,17 @@
-var app = app || {};
-
-$(function () {
+define(['jquery', 'underscore', 'backbone', 'localStorage', 'handlebars', 'text!templates/photoTemplate.html'],
+function ( $, _, Backbone, localStorage, Handlebars, photoTemplate ) {
 
 	'use strict';
 
 	// Photo View
 	// ----------
 
-	app.PhotoView = Backbone.View.extend({
+	gallery.PhotoView = Backbone.View.extend({
 
 		tagName: 'li',
 
 		// Cache the template function for a single item.
-		template: _.template( $('#item-template').html() ),
+		template: Handlebars.compile( photoTemplate ),
 
 		// The DOM events specific to an item.
 		events: {
@@ -102,5 +101,7 @@ $(function () {
 
 
 	});
+
+	return gallery.PhotoView;
 
 });

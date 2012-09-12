@@ -1,13 +1,12 @@
-var app = app || {};
-
-$(function () {
+define(['backbone'],
+function ( Backbone ) {
 
 	'use strict';
 
 	// Photo Model
 	// -----------
 
-	app.PhotoModel = Backbone.Model.extend({
+	gallery.PhotoModel = Backbone.Model.extend({
 
 		defaults: {
 			src: '',
@@ -26,5 +25,7 @@ $(function () {
 		}
 
 	});
+
+	return gallery.PhotoModel;
 
 });
