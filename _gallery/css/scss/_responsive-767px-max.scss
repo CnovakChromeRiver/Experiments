@@ -1,0 +1,20 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// ---------------------------------------------
+
+@media ( max-width: 767px ) {
+
+	#galleryapp ul li {
+
+		width:100%;
+
+		.image-wrapper {
+		
+			height:auto;
+
+			img {
+				top: 0px !important;
+			}
+		}
+	}
+}

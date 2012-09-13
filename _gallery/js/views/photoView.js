@@ -10,6 +10,8 @@ function ( $, _, Backbone, localStorage, Handlebars, photoTemplate ) {
 
 		tagName: 'li',
 
+		className: 'span6',
+
 		// Cache the template function for a single item.
 		template: Handlebars.compile( photoTemplate ),
 

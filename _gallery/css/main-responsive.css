@@ -1,0 +1,7 @@
+@media (max-width: 767px) {
+  #galleryapp ul li {
+    width: 100%; }
+    #galleryapp ul li .image-wrapper {
+      height: auto; }
+      #galleryapp ul li .image-wrapper img {
+        top: 0px !important; } }

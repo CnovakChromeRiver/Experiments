@@ -1,0 +1,17 @@
+// REPEAT VARIABLES & MIXINS
+// -------------------------
+// Required since we compile the responsive stuff separately
+
+@import "variables";
+@import "mixins";
+
+// Responsive Classes
+// ------------------
+
+// Empty
+
+// MEDIA QUERIES
+// ------------------
+
+// Phones to portrait tablets and narrow desktops
+@import "responsive-767px-max";

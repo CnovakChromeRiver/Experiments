@@ -37,7 +37,6 @@
 			}
 		}
 		textarea {
-			width: 896px;
 			min-height:100px;
 		}
 	}
@@ -55,7 +54,6 @@
 			// Display & Box Model
 			list-style: none;
 			box-sizing: border-box;
-			width: 460px;
 			padding: 10px;
 			margin: 0 10px 10px 0;
 			@include border-radius(6px);
