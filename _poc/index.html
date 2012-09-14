@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script data-main="js/config" src="js/vendor/require/require.js"></script>
+</head>
+<body>
+	<div id="expense" class="container">
+		<h1>Chrome River</h1>
+		<div id="enter-report">
+			<table class="table">
+				<tr>
+					<th>Report ID:</th>
+					<td><input type="text" id="report-id" placeholder="e.g. 0100-0254-7492"></td>
+				</tr>
+				<tr>
+					<th>Expense Owner:</th>
+					<td><input type="text" id="expense-owner"></td>
+				</tr>
+				<tr>
+					<th>Report Name:</th>
+					<td><input type="text" id="report-name"></td>
+				</tr>
+				<tr>
+					<th>Pay Me In:</th>
+					<td><input type="text" id="currency" placeholder="e.g. USD"></td>
+				</tr>
+			</table>
+			<a id="generate" href="#" class="btn btn-primary">Generate Report</a>
+		</div>
+		<div id="report">
+			<!-- Report Template -->
+		</div>
+	</div>
+</body>
+</html>
