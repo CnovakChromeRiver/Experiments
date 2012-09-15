@@ -5,9 +5,9 @@ function ( $, _, Backbone, LocalStorage, ItemModel ) {
 
 	// Expense Item Collection
 	// -----------------------
-	cr.Expense.ItemCollection = Backbone.Collection.extend({
+	cr.ItemCollection = Backbone.Collection.extend({
 
-		model: cr.Expense.ItemModel,
+		model: cr.ItemModel,
 
 		localStorage: new Backbone.LocalStorage('expense-item'),
 
@@ -29,6 +29,6 @@ function ( $, _, Backbone, LocalStorage, ItemModel ) {
 
 	});
 
-	return cr.Expense.ItemCollection;
+	return cr.ItemCollection;
 
 });

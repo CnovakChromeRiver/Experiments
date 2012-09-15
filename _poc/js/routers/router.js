@@ -1,5 +1,6 @@
-define(['backbone', 'localStorage', 'collections/itemCollection', 'views/productView'],
-function ( Backbone, localStorage, ItemCollection, HeaderView ) {
+define(['backbone', 'localStorage', 'collections/itemCollection', 'views/itemCollectionView',
+	'collections/reportCollection', 'views/reportCollectionView'],
+function ( Backbone, localStorage, ItemCollection, ItemCollectionView, ReportCollection, ReportCollectionView ) {
 
 	'use strict';
 
@@ -12,10 +13,19 @@ function ( Backbone, localStorage, ItemCollection, HeaderView ) {
 		},
 
 		display: function () {
-			var itemCollection = new cr.Expense.ItemCollection();
-			var productView = new cr.Expense.ProductView({ collection: itemCollection });
+
+			var reportCollection = new cr.ReportCollection();
+			var reportCollectionView = new cr.ReportCollectionView({ collection: reportCollection });
+
 			// Trigger a collection reset/addAll
-			productView.trigger('reset');
+			reportCollection.trigger('reset');
+
+			var itemCollection = new cr.ItemCollection();
+			var itemCollectoinView = new cr.ItemCollectionView({ collection: itemCollection });
+
+			// Trigger a collection reset/addAll
+			itemCollection.trigger('reset');
+
 		}
 
 	});

@@ -15,7 +15,7 @@ define(['backbone'], function ( Backbone ) {
 
 	// Expense Item Model
 	// ----------
-	cr.Expense.ItemModel = Backbone.Model.extend({
+	cr.ItemModel = Backbone.Model.extend({
 
 		defaults: {
 			date: todaysDate,
@@ -37,6 +37,6 @@ define(['backbone'], function ( Backbone ) {
 
 	});
 
-	return cr.Expense.ItemModel;
+	return cr.ItemModel;
 
 });
