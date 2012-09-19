@@ -1,42 +1,31 @@
-<h2>{{type}}</h2>
-<h3>{{date}}</h3>
-<table class="table">
+<table class="table table-striped">
+	<tr>
+		<th>Line Item</th>
+		<td>{{expenseReportLineItemId}}</td>
+	</tr>
+	<tr>
+		<th>Date</th>
+		<td>{{epoch transactionDate}}</td>
+	</tr>
 	<tr>
 		<th>Amount</th>
-		<td>{{amount}} {{currency}}</td>
+		<td>{{amountCustomer}} {{currency}}</td>
+	</tr>
+	<tr>
+		<th>Status</th>
+		<td><span class="{{statusApproved}}">{{statusApproved}}</span></td>
+	</tr>
+	<tr>
+		<th>Expense Type</th>
+		<td>{{lineItemRef expenseReportItemTypeId}}</td>
+	</tr>
+	<tr>
+		<th>Has External Meals</th>
+		<td><input type="checkbox" {{#if hasExternalMeals}} checked {{/if}}></td>
+	</tr>
+	<tr>
+		<th>Has Internal Meals</th>
+		<td><input type="checkbox" {{#if hasInternalMeals}} checked {{/if}}></td>
 	</tr>
 </table>
-
-<table class="table">
-	<tr>
-		<th>Matter</th>
-		<th>Amount {{currency}}</th>
-	</tr>
-	<tr>
-		<td>{{matter}}</td>
-		<td>{{amount}}</td>
-	</tr>
-</table>
-
-<table class="table">
-	<tr>
-		<th>Purpose</th>
-		<td>{{purpose}}</td>
-	</tr>
-	<tr>
-		<th>Description</th>
-		<td>{{description}}</td>
-	</tr>
-	<tr>
-		<th>Guests</th>
-		<td>{{guest.firstName guest.lastName}}</td>
-	</tr>
-	<tr>
-		<th>People</th>
-		<td>{{people}}</td>
-	</tr>
-	<tr>
-		<th>Cost/Person</th>
-		<td>{{amount}} {{currency}}</td>
-	</tr>
-</table>
+<hr>

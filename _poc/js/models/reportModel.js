@@ -10,7 +10,8 @@ define(['backbone'], function ( Backbone ) {
 			id: '',
 			owner: '',
 			name: '',
-			currency: 'USD'
+			currency: 'USD',
+			lineItems: []
 		}
 
 	});

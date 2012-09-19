@@ -12,6 +12,7 @@ require({
 		, routers: 'routers'
 		, collections: 'collections'
 		, templates: 'templates'
+		, helpers: 'templates/helpers/helpers'
 		, namespaces: 'namespaces'
 	}
 });

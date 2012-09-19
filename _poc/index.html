@@ -6,12 +6,20 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<script data-main="js/main" src="js/vendor/require/require.js"></script>
+	<style type="text/css">
+		.PENDING { color: orange; }
+		.APPROVED_FOR_PAYMENT { color: #277732; }
+		hr { border-top:3px solid #ccc; }
+		.report table tr { background: #f4f9ff; }
+	</style>
 </head>
 <body>
-	<div id="app" class="container">
-		<h1>Chrome River</h1>
-		<div id="enter-report">
-			<table class="table">
+	<div id="reports-app" class="container">
+		<h2>Chrome River</h2>
+		<button id="prev">Prev</button>
+		<button id="next">Next</button>
+		<!-- <div id="enter-report">
+			<table class="table table-striped">
 				<tr>
 					<th>Report ID:</th>
 					<td><input type="text" id="report-id" placeholder="e.g. 0100-0254-7492"></td>
@@ -30,10 +38,9 @@
 				</tr>
 			</table>
 			<button id="create-report" href="#" class="btn btn-primary">Create Report</button>
-		</div>
-		<ol id="report-collection" class="unstyled">
-			<!-- Report Collection -->
-		</ol>
+		</div> -->
+		<div id="reports-collection"></div>
+		<div id="items-collection"></div>
 	</div>
 </body>
 </html>

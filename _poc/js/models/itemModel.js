@@ -14,7 +14,7 @@ define(['backbone'], function ( Backbone ) {
 		var todaysDate = month + '/' + day + '/' + year;
 
 	// Expense Item Model
-	// ----------
+	// ------------------
 	cr.ItemModel = Backbone.Model.extend({
 
 		defaults: {

@@ -1,6 +1,6 @@
-define(['backbone', 'localStorage', 'collections/itemCollection', 'views/itemCollectionView',
-	'collections/reportCollection', 'views/reportCollectionView'],
-function ( Backbone, localStorage, ItemCollection, ItemCollectionView, ReportCollection, ReportCollectionView ) {
+define(['backbone', 'localStorage', 'collections/itemsCollection', 'views/itemsView',
+	'collections/reportsCollection', 'views/reportsView'],
+function ( Backbone, localStorage, ItemCollection, ItemsView, ReportCollection, ReportsView ) {
 
 	'use strict';
 
@@ -14,17 +14,11 @@ function ( Backbone, localStorage, ItemCollection, ItemCollectionView, ReportCol
 
 		display: function () {
 
-			var reportCollection = new cr.ReportCollection();
-			var reportCollectionView = new cr.ReportCollectionView({ collection: reportCollection });
+			var reportsCollection = new cr.ReportsCollection();
+			var reportsView = new cr.ReportsView({ collection: reportsCollection });
 
 			// Trigger a collection reset/addAll
-			reportCollection.trigger('reset');
-
-			var itemCollection = new cr.ItemCollection();
-			var itemCollectoinView = new cr.ItemCollectionView({ collection: itemCollection });
-
-			// Trigger a collection reset/addAll
-			itemCollection.trigger('reset');
+			reportsCollection.trigger('reset');
 
 		}
 
