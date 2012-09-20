@@ -5,8 +5,9 @@ function ( $, _, Backbone, localStorage, Handlebars, ItemsView, ItemsCollection,
 
 	// Report View
 	// -----------
+	
 	cr.ReportView = Backbone.View.extend({
-		
+
 		className: 'report',
 
 		template: Handlebars.compile( ReportTemplate ),

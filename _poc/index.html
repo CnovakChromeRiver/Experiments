@@ -7,38 +7,84 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<script data-main="js/main" src="js/vendor/require/require.js"></script>
 	<style type="text/css">
-		.PENDING { color: orange; }
-		.APPROVED_FOR_PAYMENT { color: #277732; }
+		body {overflow-y:scroll;background:#ebebeb;}
+		body > .container { margin:10px auto;background:white;border:1px solid #cacaca;}
+		.payment-status { color:white; border-radius:9px; padding:4px 8px; }
+		.PENDING { background-color: orange; }
+		.APPROVED_FOR_PAYMENT { background-color: #277732; }
 		hr { border-top:3px solid #ccc; }
+		#items-collection > div:last-of-type table { margin-bottom:0; }
+		#items-collection > div:last-of-type hr { display:none; }
+		h2, .buttons {float:left;}
+		h3 {margin-left:20px;}
+		.buttons { padding: 12px; }
 		.report table tr { background: #f4f9ff; }
+		#report-header {padding:2px 20px;overflow:hidden;}
+		#toggle-report-list { height:0; width:0; border-right:8px solid transparent; border-left:8px solid transparent; border-bottom:8px solid transparent; border-top:8px solid #555; float:left; margin-top:21px; }
+		#toggle-report-list.closed { border-right:8px solid transparent; border-left:8px solid #555; border-bottom:8px solid transparent; border-top:8px solid transparent; margin-top:18px; }
+		.table th, .table td { vertical-align: middle }
 	</style>
 </head>
 <body>
 	<div id="reports-app" class="container">
+		<div id="report-header">
 		<h2>Chrome River</h2>
-		<button id="prev">Prev</button>
-		<button id="next">Next</button>
-		<!-- <div id="enter-report">
+		<div class="buttons">
+			<button id="prev" class="btn disabled">Prev</button>
+			<button id="next" class="btn disabled">Next</button>
+		</div>
+		<a id="toggle-report-list" href="#"></a>
+		</div>
+		<div id="report-list">
 			<table class="table table-striped">
+			<thead>
 				<tr>
-					<th>Report ID:</th>
-					<td><input type="text" id="report-id" placeholder="e.g. 0100-0254-7492"></td>
+					<th></th>
+					<th></th>
 				</tr>
-				<tr>
-					<th>Expense Owner:</th>
-					<td><input type="text" id="expense-owner"></td>
-				</tr>
-				<tr>
-					<th>Report Name:</th>
-					<td><input type="text" id="report-name"></td>
-				</tr>
-				<tr>
-					<th>Pay Me In:</th>
-					<td><input type="text" id="payment-currency" placeholder="e.g. USD"></td>
-				</tr>
+			</thead>
+			<tr>
+				<th>JEROME: 11-12 Feb 2009: Brussels: Project X</th>
+				<td><button class="btn btn-primary view-report" data-id="0000060F-C74E-1B81-FC14-47B94503F4D0">View Report</button></td>
+			</tr>
+			<tr>
+				<th>Taxis</th>
+				<td><button class="btn btn-primary view-report" data-id="00001756-2CAB-4304-0DDB-9F9473AAC7A3">View Report</button></td>
+			</tr>
+			<tr>
+				<th>Taxi 6/28/12</th>
+				<td><button class="btn btn-primary view-report" data-id="00001A00-E4F0-BC53-8436-51FD0A31E652">View Report</button></td>
+			</tr>
+			<tr>
+				<th>Lunch with Nikos Stathopoulos</th>
+				<td><button class="btn btn-primary view-report" data-id="00001F29-DAC8-C044-2A6F-29F17149C23D">View Report</button></td>
+			</tr>
+			<tr>
+				<th>11/4/09 Vistage Expense</th>
+				<td><button class="btn btn-primary view-report" data-id="00002C81-84C9-030F-7FBC-9095100068FF">View Report</button></td>
+			</tr>
+			<tr>
+				<th>Lunch with Caroline Boulanger</th>
+				<td><button class="btn btn-primary view-report" data-id="000033AE-F9CE-F400-A2CA-983ECCC14137">View Report</button></td>
+			</tr>
+			<tr>
+				<th>7/21/09 Cab expense</th>
+				<td><button class="btn btn-primary view-report" data-id="00003406-729B-FFED-1425-DC591339328E">View Report</button></td>
+			</tr>
+			<tr>
+				<th>May 2012</th>
+				<td><button class="btn btn-primary view-report" data-id="000043A5-1727-A809-37B2-9DACAD7582CC">View Report</button></td>
+			</tr>
+			<tr>
+				<th>Lunch with JPM</th>
+				<td><button class="btn btn-primary view-report" data-id="00004727-9722-17B6-B07F-882A68D21492">View Report</button></td>
+			</tr>
+			<tr>
+				<th>5559_10312010a</th>
+				<td><button class="btn btn-primary view-report" data-id="00004922-8A51-082F-045F-83C3E340A66B">View Report</button></td>
+			</tr>
 			</table>
-			<button id="create-report" href="#" class="btn btn-primary">Create Report</button>
-		</div> -->
+		</div>
 		<div id="reports-collection"></div>
 		<div id="items-collection"></div>
 	</div>

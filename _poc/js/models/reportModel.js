@@ -8,6 +8,7 @@ define(['backbone'], function ( Backbone ) {
 
 		defaults: {
 			id: '',
+			myId: '',
 			owner: '',
 			name: '',
 			currency: 'USD',

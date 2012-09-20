@@ -20,6 +20,7 @@ function ( $, _, Backbone, ItemView ) {
 			this.$expenseOwner = $('#expense-owner');
 			this.$reportName = $('#report-name');
 			this.$paymentCurrency = $('#payment-currency');
+			this.$itemsCollection = $('#items-collection');
 
 			this.collection.on( 'add', this.addOne, this );
 			this.collection.on( 'reset', this.addAll, this );
@@ -37,11 +38,11 @@ function ( $, _, Backbone, ItemView ) {
 
 		addOne: function ( newItemModel ) {
 			var view = new cr.ItemView({ model: newItemModel });
-			$('#items-collection').append( view.render().el );
+			this.$itemsCollection.append( view.render().el );
 		},
 
 		addAll: function () {
-			$('#items-collection').empty();
+			this.$itemsCollection.empty();
 			this.collection.each( this.addOne, this);
 		},
 

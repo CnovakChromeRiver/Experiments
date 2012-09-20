@@ -18,7 +18,7 @@ function ( Backbone, localStorage, ItemCollection, ItemsView, ReportCollection, 
 			var reportsView = new cr.ReportsView({ collection: reportsCollection });
 
 			// Trigger a collection reset/addAll
-			reportsCollection.trigger('reset');
+			// reportsCollection.trigger('reset');
 
 		}
 

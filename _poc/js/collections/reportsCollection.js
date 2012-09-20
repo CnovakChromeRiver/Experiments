@@ -4,7 +4,8 @@ function ( $, _, Backbone, LocalStorage, ReportModel ) {
 	'use strict';
 
 	// Expense Report Collection
-	// -----------------------
+	// -------------------------
+
 	cr.ReportsCollection = Backbone.Collection.extend({
 
 		model: cr.ReportModel,
@@ -43,34 +44,64 @@ function ( $, _, Backbone, LocalStorage, ReportModel ) {
 			return JSON.stringify(myData);
 		},
 
-		fetch: function () {
+		currentId: '',
 
-			this.getAjax(this.arrayIds[this.iterator]);
+		fetch: function ( id ) {
+
+			this.currentId = id;
+
+			if ( localStorage.getItem(id) ) {
+
+				var response = $.parseJSON(localStorage.getItem(id));
+
+				var tmpItem = new cr.ReportModel({
+					id:id,
+					myId:response.payload.reportId,
+					owner:response.payload.personId,
+					name:response.payload.name,
+					currency:'USD',
+					lineItems: response.payload.lineItems
+				});
+
+				var tmpModel = this.get(id);
+
+              	if ( tmpModel ) {
+              		this.trigger('display:report', tmpModel);
+              	} else {
+              		this.addOne(tmpItem);
+              	}
+				
+			} else {
+
+				this.getAjax(id);
+			}
+
+		},
+
+		fetchPrev: function () {
+
+			var prevIndex = this.arrayIds.indexOf(this.currentId) - 1;
+			if ( prevIndex < 0 ) {
+				prevIndex = this.arrayIds.length - 1;
+			}
+			var prevModel = this.arrayIds[prevIndex];
+			this.fetch(prevModel);
+
+		},
+
+		fetchNext: function () {
+
+			var nextIndex = this.arrayIds.indexOf(this.currentId) + 1;
+			if ( this.arrayIds.length <= nextIndex ) {
+				nextIndex = 0;
+			}
+			var nextModel = this.arrayIds[nextIndex];
+			this.fetch(nextModel);
 
 		},
 
 		addOne: function ( newModel ) {
 			this.add(newModel);
-		},
-
-		//localStorage: new Backbone.LocalStorage('report-item'),
-
-		// We keep the **Reports** in sequential order, despite being saved by unordered
-		// GUID in the database. This generates the next order number for new items.
-		nextOrder: function () {
-
-			alert("Next order!")
-
-			if ( !this.length ) {
-				return 1;
-			} else {
-				return this.last().get('order') + 1;
-			}
-		},
-
-		comparator: function ( reportModel ) {
-
-			return reportModel.get('order');
 		},
 
 		getAjax: function ( id ) {
@@ -89,7 +120,8 @@ function ( $, _, Backbone, LocalStorage, ReportModel ) {
 					if ( that.init ) {
 
 						var tmpItem = new cr.ReportModel({
-							id:response.payload.reportId,
+							id:id,
+							myId:response.payload.reportId,
 							owner:response.payload.personId,
 							name:response.payload.name,
 							currency:'USD',
@@ -97,18 +129,17 @@ function ( $, _, Backbone, LocalStorage, ReportModel ) {
 						});
 
 	                  	that.addOne(tmpItem);
-	                  	that.iterator++;
-						that.getTheRest();
+	                 
+						that.getTheRest(id);
 	                  	that.init = false;
 
                   } else {
 
-                  		that.iterator++;
-                  		that.getTheRest();
+                  		that.getTheRest(id);
 
                   }
 
-                  localStorage.setItem((that.iterator -1), JSON.stringify(response));
+                  localStorage.setItem(id, JSON.stringify(response));
 
 				},
 				error: function(msg, statusText, errorThrown) {
@@ -133,10 +164,12 @@ function ( $, _, Backbone, LocalStorage, ReportModel ) {
 
 		iterator: 0,
 
-		getTheRest: function () {
+		getTheRest: function ( id ) {
 
-			if(this.iterator < this.arrayIds.length) {
+			if( id !== this.arrayIds[this.iterator] && this.iterator < this.arrayIds.length ) {
+
 				this.getAjax(this.arrayIds[this.iterator]);
+				this.iterator++;
 			}
 		}
 
